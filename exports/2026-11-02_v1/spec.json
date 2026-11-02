@@ -1,0 +1,23 @@
+{
+ "id": "2026-11-02_v1",
+ "theme": "paper",
+ "music": {"mood": "chill", "seed": 4417},
+ "brand": {"name": "Muhammad Naveed", "role": "WordPress · Shopify · Full-Stack Developer", "mark": "MN", "phone": "+92 325 2314412"},
+ "scenes": [
+  {"type": "hook", "label": "Business owners", "lines": ["Why is my", "website so"], "accent_line": "slow?", "sub": "4 common causes, and how to fix them."},
+  {"type": "list", "title": "4 things slowing it down", "good": false, "items": [
+    ["Huge images", "Photos uploaded at full size"],
+    ["Too many plugins", "Extra code on every page"],
+    ["Cheap hosting", "The server is slow to respond"],
+    ["Heavy scripts", "Ads and trackers load first"]]},
+  {"type": "browser", "title": "What a fast page does", "url": "yourbusiness.com", "label": "Concept demo",
+   "callouts": ["Compressed images", "Fewer plugins", "Smart caching", "Scripts load last"]},
+  {"type": "steps", "title": "How I fix it", "sub": "A simple 3-step process", "items": [
+    ["Test the speed", "Using Google PageSpeed Insights"],
+    ["Fix the biggest issues", "Images, plugins and caching"],
+    ["Test again", "On real phones, not just desktop"]]},
+  {"type": "statement", "label": "Why it matters", "lines": ["A faster site", "keeps visitors", "on your page."], "accent": [2], "sub": "Especially on mobile phones."},
+  {"type": "cta", "lines": ["Is your site", "slow?"], "sub": "Send me your link and let's look at it together.", "button": "WhatsApp me",
+   "portfolio": "naveed786-king.github.io/Naveedsoft.com", "footer": ["WordPress · Shopify · WooCommerce · Custom sites"]}
+ ]
+}

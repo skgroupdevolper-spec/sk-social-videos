@@ -1,0 +1,22 @@
+{
+ "id": "2026-11-02_v2",
+ "theme": "ink",
+ "music": {"mood": "house", "seed": 9031},
+ "brand": {"name": "Muhammad Naveed", "role": "WordPress · Shopify · Full-Stack Developer", "mark": "MN", "phone": "+92 325 2314412"},
+ "scenes": [
+  {"type": "kinetic", "words": ["Hiring", "a", "remote", "WordPress", "developer?"], "accent": [3], "size": 150, "sub": "Here's what I bring to your team."},
+  {"type": "stat", "big": "6+", "text": "years building WordPress, Shopify and custom websites", "sub": "Frontend, backend and full-stack projects"},
+  {"type": "code", "title": "Custom code, not just plugins", "file": "functions.php", "type_time": 3.4,
+   "keywords": ["add_action(", "function", "register_rest_route(", "=>"],
+   "lines": ["// Custom REST API endpoint", "add_action('rest_api_init', function () {", "  register_rest_route('shop/v1', '/orders', [", "    'methods'  => 'GET',", "    'callback' => 'get_orders',", "  ]);", "});"],
+   "caption": "Custom themes, plugins and API integrations."},
+  {"type": "list", "title": "What hiring teams look for", "items": [
+    ["Strong core skills", "PHP, JavaScript, MySQL, React"],
+    ["Real custom work", "Themes, plugins and REST APIs"],
+    ["Clear communication", "Regular updates, remote-ready"],
+    ["Speed and security", "Built in from day one"]]},
+  {"type": "chips", "title": "Roles I'm open to", "sub": "Remote · Full-time · Part-time · Contract", "items": ["WordPress Developer", "Shopify Developer", "Full-Stack", "Frontend", "Backend"]},
+  {"type": "cta", "lines": ["Hiring?", "Let's talk."], "sub": "Remote, full-time, part-time or contract.", "button": "WhatsApp me",
+   "portfolio": "naveed786-king.github.io/Naveedsoft.com", "footer": ["Open to international teams"]}
+ ]
+}
