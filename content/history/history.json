@@ -1,16 +1,93 @@
 {
  "videos": [
-  {"id": "2026-11-02_v0", "date": "2026-11-02", "type": "client", "topic": "General web developer for hire promo (before brand rules)", "hook": "Want more customers from the internet?",
-   "primary_keyword": "web developer for hire", "audience": "business owners", "design": "midnight dark navy cards", "music": "corporate", "cta": "WhatsApp me",
-   "status": "published", "links": {"instagram": "https://www.instagram.com/reel/DfO_RP3ApqP/", "facebook": "https://facebook.com/reel/1481520173883865",
-   "tiktok": "https://www.tiktok.com/@siyalking149/video/7703504205880806657", "youtube": "https://www.youtube.com/shorts/HGYwcvonstQ"}},
-  {"id": "2026-11-02_v1", "date": "2026-11-02", "type": "authority", "topic": "Why is my website slow? 4 common causes", "hook": "Why is my website so slow?",
-   "primary_keyword": "why is my website slow", "secondary_keywords": ["website speed optimization", "slow WordPress website", "improve website loading speed", "Google PageSpeed Insights", "website speed for small business"],
-   "audience": "small business and eCommerce owners", "design": "paper theme: problem checklist + browser walkthrough + steps", "scenes": ["hook", "list", "browser", "steps", "statement", "cta"],
-   "music": {"mood": "chill", "seed": 4417}, "cta": "Is your site slow? Send me your link and let's look at it together.", "status": "rendered, awaiting approval"},
-  {"id": "2026-11-02_v2", "date": "2026-11-02", "type": "career", "topic": "Hiring a remote WordPress developer: what I bring", "hook": "Hiring a remote WordPress developer?",
-   "primary_keyword": "hire remote WordPress developer", "secondary_keywords": ["remote WordPress developer", "WordPress and Shopify developer", "full stack developer for hire", "custom WordPress plugin development", "WordPress REST API developer"],
-   "audience": "recruiters, hiring managers, agencies", "design": "ink theme: kinetic type + code explainer + checklist + role chips", "scenes": ["kinetic", "stat", "code", "list", "chips", "cta"],
-   "music": {"mood": "house", "seed": 9031}, "cta": "Hiring? Let's talk.", "status": "rendered, awaiting approval"}
+  {
+   "id": "2026-11-02_v0",
+   "date": "2026-11-02",
+   "type": "client",
+   "topic": "General web developer for hire promo (before brand rules)",
+   "hook": "Want more customers from the internet?",
+   "primary_keyword": "web developer for hire",
+   "audience": "business owners",
+   "design": "midnight dark navy cards",
+   "music": "corporate",
+   "cta": "WhatsApp me",
+   "status": "published",
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DfO_RP3ApqP/",
+    "facebook": "https://facebook.com/reel/1481520173883865",
+    "tiktok": "https://www.tiktok.com/@siyalking149/video/7703504205880806657",
+    "youtube": "https://www.youtube.com/shorts/HGYwcvonstQ"
+   }
+  },
+  {
+   "id": "2026-11-02_v1",
+   "date": "2026-11-02",
+   "type": "authority",
+   "topic": "Why is my website slow? 4 common causes",
+   "hook": "Why is my website so slow?",
+   "primary_keyword": "why is my website slow",
+   "secondary_keywords": [
+    "website speed optimization",
+    "slow WordPress website",
+    "improve website loading speed",
+    "Google PageSpeed Insights",
+    "website speed for small business"
+   ],
+   "audience": "small business and eCommerce owners",
+   "design": "paper theme: problem checklist + browser walkthrough + steps",
+   "scenes": [
+    "hook",
+    "list",
+    "browser",
+    "steps",
+    "statement",
+    "cta"
+   ],
+   "music": {
+    "mood": "chill",
+    "seed": 4417
+   },
+   "cta": "Is your site slow? Send me your link and let's look at it together.",
+   "status": "scheduled",
+   "scheduled_for": "2026-11-02T06:00:00-08:00",
+   "metricool_id": 413751412,
+   "metricool_uuid": "374460600615914163",
+   "title": "Why Is My Website So Slow? 4 Common Causes and How to Fix Them"
+  },
+  {
+   "id": "2026-11-02_v2",
+   "date": "2026-11-02",
+   "type": "career",
+   "topic": "Hiring a remote WordPress developer: what I bring",
+   "hook": "Hiring a remote WordPress developer?",
+   "primary_keyword": "hire remote WordPress developer",
+   "secondary_keywords": [
+    "remote WordPress developer",
+    "WordPress and Shopify developer",
+    "full stack developer for hire",
+    "custom WordPress plugin development",
+    "WordPress REST API developer"
+   ],
+   "audience": "recruiters, hiring managers, agencies",
+   "design": "ink theme: kinetic type + code explainer + checklist + role chips",
+   "scenes": [
+    "kinetic",
+    "stat",
+    "code",
+    "list",
+    "chips",
+    "cta"
+   ],
+   "music": {
+    "mood": "house",
+    "seed": 9031
+   },
+   "cta": "Hiring? Let's talk.",
+   "status": "scheduled",
+   "scheduled_for": "2026-11-02T12:00:00-08:00",
+   "metricool_id": 413751635,
+   "metricool_uuid": "1940391653934647925",
+   "title": "Hiring a Remote WordPress Developer? What I Bring to Your Team"
+  }
  ]
 }
