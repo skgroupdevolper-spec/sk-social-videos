@@ -1,0 +1,17 @@
+{
+ "id": "YYYY-MM-DD_v2",
+ "theme": "graphite",
+ "music": {"mood": "upbeat", "seed": 1234},
+ "brand": {"name": "SK Developer", "role": "Full-Stack Software Development", "mark": "SK", "phone": "+92 325 2314412"},
+ "scenes": [
+  {"type": "kinetic", "words": ["Still", "running", "bookings", "on", "WhatsApp", "and", "paper?"], "accent": [2], "size": 130},
+  {"type": "dashboard", "kind": "booking", "title": "One dashboard for every booking", "menu": ["Calendar", "Bookings", "Clients", "Payments"], "label": "Concept demo",
+   "callouts": ["Customers book online", "Automatic reminders", "Staff see their schedule"]},
+  {"type": "chat", "title": "Plus an AI assistant for common questions", "bot": "Booking assistant", "label": "Concept demo",
+   "messages": [["user", "Do you have a slot on Friday?"], ["bot", "Yes: 11:00 or 15:30. Shall I book one?"]]},
+  {"type": "chips", "title": "Built with", "items": ["React.js", "Next.js", "Node.js", "PHP", "REST APIs"]},
+  {"type": "cta", "kicker": "Need a custom booking system?", "lines": ["Let's discuss", "your requirements."], "sub": "Tell us how you work today. We'll map the system with you.",
+   "button": "Message us on WhatsApp", "link": "wa.me/923252314412", "link_label": "WhatsApp"},
+  {"type": "endscreen", "tagline": "Custom web apps, business systems and eCommerce platforms", "button": "Discuss your project on WhatsApp"}
+ ]
+}

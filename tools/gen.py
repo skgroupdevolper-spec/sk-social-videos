@@ -14,6 +14,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H, FPS = 1080, 1920, 30
 MIN_TOTAL = 32.0
+SAFE_R = 130   # right margin kept clear of TikTok/Instagram/Reels action buttons
+SAFE_TOP, SAFE_BOTTOM = 220, 1560   # key text stays inside this band on all 4 platforms
 FD = "/usr/share/fonts/opentype/inter/"
 def _f(name, fallback):
     p = FD + name
@@ -112,7 +114,9 @@ class R:
                 "chips": 4.4, "compare": 6.4, "intro": 4.8, "cta": 6.4,
                 "kinetic": 1.6 + .42 * len(s.get("words", [])) + (1.2 if s.get("sub") else 0),
                 "code": 2.6 + s.get("type_time", 3.2) + (1.2 if s.get("caption") else 0),
-                "browser": 2.4 + .45 * len(s.get("callouts", []))}.get(t, 4.5)
+                "browser": 2.4 + .45 * len(s.get("callouts", [])),
+                "endscreen": 4.2, "chat": 1.8 + .9 * len(s.get("messages", [])) + (1.0 if s.get("caption") else 0),
+                "dashboard": 2.6 + .45 * len(s.get("callouts", []))}.get(t, 4.5)
         return float(s.get("dur", base))
 
     def make_base(self):
@@ -240,12 +244,12 @@ class R:
         th = self.th; k = ease(gt / .8)
         x, y = 70, 110
         d.rounded_rectangle([x, y, x + 92, y + 92], radius=min(26, th["radius"]), fill=A(th["accent"], k))
-        f = font("bold", 40); s = self.brand.get("mark", "</>")
+        f = font("bold", 40); s = self.brand.get("mark", "SK")
         bb = d.textbbox((0, 0), s, font=f)
         fg = (255, 255, 255) if sum(th["accent"]) < 520 else (12, 12, 20)
         d.text((x + 46 - (bb[2] - bb[0]) / 2 - bb[0], y + 46 - (bb[3] - bb[1]) / 2 - bb[1]), s, font=f, fill=A(fg, k))
-        d.text((x + 116, y + 6), self.brand.get("name", "Muhammad Naveed"), font=font("bold", 44), fill=A(th["text"], k))
-        d.text((x + 116, y + 58), self.brand.get("role", "WordPress · Shopify · Full-Stack Developer"), font=font("med", 28), fill=A(th["muted"], k))
+        d.text((x + 116, y + 6), self.brand.get("name", "SK Developer"), font=font("bold", 44), fill=A(th["text"], k))
+        d.text((x + 116, y + 58), self.brand.get("role", "Full-Stack Software Development"), font=font("med", 28), fill=A(th["muted"], k))
 
     def progress(self, d, gt):
         th = self.th; y = H - 90
@@ -324,7 +328,7 @@ class R:
             kk = ease((t - st) / .5)
             if kk <= 0: continue
             yy = y0s + i * (ch + gap) + 40 * (1 - kk)
-            self.card(d, 90, yy, W - 90, yy + ch, kk)
+            self.card(d, 90, yy, W - SAFE_R, yy + ch, kk)
             if numbered: self.badge(d, 180, yy + ch / 2, 44, str(i + 1), kk)
             else: self.check(d, 180, yy + ch / 2, 44, kk, ease((t - st - .15) / .4), good)
             ff = font("bold", 50)
@@ -389,7 +393,7 @@ class R:
         cols = [(s["left"], False), (s["right"], True)]
         nmax = max(len(s["left"]["items"][:5]), len(s["right"]["items"][:5]))
         chh = 190 + nmax * 150
-        cw = (W - 180 - 30) / 2
+        cw = (W - 90 - SAFE_R - 30) / 2
         for c, (side, good) in enumerate(cols):
             st = .4 + c * 1.6
             k = ease((t - st) / .5)
@@ -409,7 +413,10 @@ class R:
 
     def s_cta(self, d, t, s):
         th = self.th
-        y = self.headline(d, t, 0, 420, s.get("lines", ["Let's build", "your website"]), (1,), maxs=124)
+        y0 = 420
+        if s.get("kicker"):
+            self.line(d, t, 0, 360, s["kicker"].upper(), font("semi", 34), th["accent"]); y0 = 430
+        y = self.headline(d, t, .1, y0, s.get("lines", ["Let's build", "your website"]), tuple(s.get("accent", [len(s.get("lines", [0, 0])) - 1])), maxs=124)
         if s.get("sub"): y = self.block(d, t, .5, y + 30, s["sub"], "med", 46, th["muted"])
         green = (37, 211, 102)
         kb = back((t - .9) / .6); cy = y + 230
@@ -432,11 +439,14 @@ class R:
         k3 = ease((t - 1.6) / .5)
         if k3 > 0 and s.get("pill"):
             self.pill(d, None, cy + 240, s["pill"], font("semi", 38), th["text"], th["card"], k3, h=78)
-        if k3 > 0 and s.get("portfolio"):
-            self.txt(d, None, cy + 220 if not s.get("pill") else cy + 300, "Portfolio", font("semi", 30), th["muted"], k3)
-            self.txt(d, None, (cy + 262) if not s.get("pill") else cy + 342, s["portfolio"], font("bold", 40), th["text"], k3)
+        link = s.get("link") or s.get("portfolio")
+        if k3 > 0 and link:
+            lab = s.get("link_label", "Portfolio" if s.get("portfolio") else "")
+            base = cy + (300 if s.get("pill") else 220)
+            if lab: self.txt(d, None, base, lab, font("semi", 30), th["muted"], k3)
+            self.txt(d, None, base + 42, link, font("bold", 40), th["text"], k3)
         if s.get("footer"):
-            fy = cy + (330 if not (s.get("pill") and s.get("portfolio")) else 430)
+            fy = cy + (330 if not (s.get("pill") and (s.get("link") or s.get("portfolio"))) else 430)
             for i, l in enumerate(s["footer"][:2]):
                 k4 = ease((t - 1.9 - i * .2) / .5)
                 f = font("semi" if i else "med", 40)
@@ -556,6 +566,140 @@ class R:
             kk = ease((t - 1.6 - i * .45) / .45)
             if kk <= 0: continue
             yy = cy + i * 92
+            self.check(d, 130, yy + 30, 28, kk, ease((t - 1.75 - i * .45) / .35), True)
+            d.text((180 + 30 * (1 - kk), yy + 8), c, font=font("semi", 44), fill=A(th["text"], kk))
+
+
+    def s_endscreen(self, d, t, s):
+        """Branded end screen: logo mark, company name, tagline, WhatsApp contact."""
+        th = self.th
+        k = back(t / .6)
+        r = 120 * k
+        if r > 2:
+            cx, cy = W / 2, 560
+            d.rounded_rectangle([cx - r, cy - r, cx + r, cy + r], radius=r * .32, fill=A(th["accent"], 1))
+            f = font("black", 120 * k); m = self.brand.get("mark", "SK")
+            bb = d.textbbox((0, 0), m, font=f)
+            fg = (255, 255, 255) if sum(th["accent"]) < 520 else (12, 12, 20)
+            d.text((cx - (bb[2] - bb[0]) / 2 - bb[0], cy - (bb[3] - bb[1]) / 2 - bb[1]), m, font=f, fill=A(fg, 1))
+        k1 = ease((t - .4) / .5)
+        self.txt(d, None, 740 + 30 * (1 - k1), self.brand.get("name", "SK Developer"), font("black", 96), th["text"], k1)
+        y = 870
+        for i, l in enumerate(wrap(s.get("tagline", "Full-Stack Software & Digital Solutions"), font("med", 44), W - 200)):
+            self.txt(d, None, y + i * 56, l, font("med", 44), th["muted"], ease((t - .6) / .5)); y2 = y + i * 56
+        green = (37, 211, 102)
+        kb = back((t - 1.0) / .6)
+        if kb > .02:
+            cy = 1150; bw, bh = 900 * kb, 150 * kb
+            d.rounded_rectangle([W / 2 - bw / 2, cy - bh / 2, W / 2 + bw / 2, cy + bh / 2], radius=bh / 2, fill=A(green, 1))
+            lab = s.get("button", "Discuss your project on WhatsApp").upper()
+            ff = font("bold", 40 * kb)
+            while tw(lab, ff) > bw - 80 and ff.size > 20: ff = font("bold", ff.size - 2)
+            bb = d.textbbox((0, 0), lab, font=ff)
+            d.text((W / 2 - (bb[2] - bb[0]) / 2 - bb[0], cy - (bb[3] - bb[1]) / 2 - bb[1]), lab, font=ff, fill=(255, 255, 255, 255))
+        k3 = ease((t - 1.5) / .5)
+        self.txt(d, None, 1265, self.brand.get("phone", "+92 325 2314412"), font("black", 72), th["text"], k3)
+        self.txt(d, None, 1365, s.get("note", "wa.me/923252314412"), font("semi", 40), th["accent"] if sum(th["accent"]) > 150 else th["muted"], k3)
+
+    def s_chat(self, d, t, s):
+        """Chat conversation, e.g. an AI support chatbot (concept illustration)."""
+        th = self.th
+        y = self.headline(d, t, 0, 330, wrap(s["title"], font(th["head"], 76), W - 180), (), maxs=76)
+        x0, y0, w = 90, y + 40, W - 90 - SAFE_R
+        msgs = s["messages"]
+        k = ease((t - .2) / .5)
+        if k <= 0: return
+        h = 120 + 150 * len(msgs)
+        self.card(d, x0, y0, x0 + w, y0 + h, k)
+        d.ellipse([x0 + 30, y0 + 28, x0 + 82, y0 + 80], fill=A(th["accent"], k))
+        d.text((x0 + 100, y0 + 30), s.get("bot", "Support assistant"), font=font("bold", 36), fill=A(th["text"], k))
+        if s.get("label"):
+            lw = tw(s["label"], font("semi", 24)) + 68
+            self.pill(d, x0 + w - lw - 24, y0 + 54, s["label"], font("semi", 24), th["muted"], th["bg_c"], k, h=44)
+        cy = y0 + 120
+        for i, m in enumerate(msgs):
+            who, text = m[0], m[1]
+            st = .7 + i * .9
+            kk = ease((t - st) / .4)
+            if kk <= 0: break
+            # typing dots before bot replies
+            lines = wrap(text, font("med", 38), w * .72)[:3]
+            bh = 30 + 48 * len(lines)
+            bw = max(tw(l, font("med", 38)) for l in lines) + 60
+            user = who == "user"
+            bx = x0 + w - 30 - bw if user else x0 + 30
+            col = th["accent"] if user else th["border"]
+            fg = (255, 255, 255) if user and sum(th["accent"]) < 520 else th["text"]
+            d.rounded_rectangle([bx, cy + 20 * (1 - kk), bx + bw, cy + bh + 20 * (1 - kk)], radius=28, fill=A(col, kk))
+            for j, l in enumerate(lines):
+                d.text((bx + 30, cy + 16 + j * 48 + 20 * (1 - kk)), l, font=font("med", 38), fill=A(fg, kk))
+            cy += bh + 22
+        if s.get("caption"):
+            self.block(d, t, .7 + len(msgs) * .9, y0 + h + 40, s["caption"], "med", 44, th["muted"])
+
+    def s_dashboard(self, d, t, s):
+        """Admin dashboard / CRM / booking / store mockup (concept illustration)."""
+        th = self.th
+        y = self.headline(d, t, 0, 330, wrap(s["title"], font(th["head"], 76), W - 180), (), maxs=76)
+        x0, y0, w, h = 90, y + 40, W - 90 - SAFE_R, 700
+        k = ease((t - .2) / .5)
+        if k <= 0: return
+        self.card(d, x0, y0, x0 + w, y0 + h, k)
+        kind = s.get("kind", "admin")
+        # sidebar
+        d.rounded_rectangle([x0 + 20, y0 + 20, x0 + 200, y0 + h - 20], radius=18, fill=A(th["border"], k))
+        for i, lab in enumerate(s.get("menu", ["Overview", "Orders", "Customers", "Reports"])[:6]):
+            kk = ease((t - .5 - i * .1) / .4)
+            col = th["accent"] if i == 0 else th["muted"]
+            d.text((x0 + 40, y0 + 50 + i * 60), lab, font=font("semi", 26), fill=A(col, kk))
+        mx, mw = x0 + 230, w - 250
+        if kind == "booking":
+            # calendar grid with booked slots
+            days = ["Mon", "Tue", "Wed", "Thu", "Fri"]
+            cw = mw / 5
+            for i, dd in enumerate(days):
+                d.text((mx + i * cw + 10, y0 + 30), dd, font=font("semi", 26), fill=A(th["muted"], k))
+            booked = [(0, 1), (1, 0), (1, 3), (2, 2), (3, 1), (3, 4), (4, 0), (4, 3), (2, 5), (0, 4)]
+            for n, (c, r) in enumerate(booked):
+                kk = ease((t - .7 - n * .12) / .35)
+                if kk <= 0: continue
+                bx, by = mx + c * cw + 6, y0 + 80 + r * 100
+                d.rounded_rectangle([bx, by, bx + cw - 12, by + 84], radius=12, fill=A(th["accent"] if n % 3 else th["accent2"] if sum(th["accent2"]) < 700 else th["muted"], kk))
+        elif kind == "store":
+            for n in range(6):
+                c, r = n % 3, n // 3
+                kk = ease((t - .7 - n * .12) / .4)
+                if kk <= 0: continue
+                bx, by = mx + c * (mw / 3), y0 + 30 + r * 320
+                d.rounded_rectangle([bx, by, bx + mw / 3 - 20, by + 200], radius=16, fill=A(th["border"], kk))
+                d.rounded_rectangle([bx, by + 215, bx + 120, by + 235], radius=6, fill=A(th["muted"], kk))
+                d.rounded_rectangle([bx + mw / 3 - 120, by + 250, bx + mw / 3 - 20, by + 290], radius=20, fill=A(th["accent"], kk))
+        else:
+            # KPI tiles (no numbers, to avoid fake figures) + bar chart
+            for i in range(3):
+                kk = ease((t - .6 - i * .12) / .4)
+                if kk <= 0: continue
+                bx = mx + i * (mw / 3)
+                d.rounded_rectangle([bx, y0 + 30, bx + mw / 3 - 16, y0 + 150], radius=14, fill=A(th["border"], kk))
+                d.rounded_rectangle([bx + 20, y0 + 60, bx + 120, y0 + 76], radius=6, fill=A(th["muted"], kk))
+                d.rounded_rectangle([bx + 20, y0 + 96, bx + 80 + 40 * i, y0 + 126], radius=8, fill=A(th["accent"], kk))
+            vals = [.45, .7, .55, .9, .65, .8, .6]
+            bw = mw / len(vals)
+            for j, v in enumerate(vals):
+                kk = ease((t - .9 - j * .07) / .5)
+                hh = 380 * v * kk
+                if hh > 1:
+                    bx = mx + j * bw
+                    d.rounded_rectangle([bx + 6, y0 + h - 40 - hh, bx + bw - 10, y0 + h - 40], radius=8,
+                                        fill=A(th["accent"] if j % 2 else th["muted"], 1))
+        if s.get("label"):
+            lw = tw(s["label"], font("semi", 24)) + 68
+            self.pill(d, x0 + w - lw - 24, y0 + h - 46, s["label"], font("semi", 24), th["muted"], th["bg_c"], k, h=44)
+        cy = y0 + h + 50
+        for i, c in enumerate(s.get("callouts", [])[:3]):
+            kk = ease((t - 1.6 - i * .45) / .45)
+            if kk <= 0: continue
+            yy = cy + i * 90
             self.check(d, 130, yy + 30, 28, kk, ease((t - 1.75 - i * .45) / .35), True)
             d.text((180 + 30 * (1 - kk), yy + 8), c, font=font("semi", 44), fill=A(th["text"], kk))
 
