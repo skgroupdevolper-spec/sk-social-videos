@@ -24,7 +24,14 @@
         "facebook": "PUBLISHED",
         "instagram": "PUBLISHED"
       },
-      "status_checked": "2026-11-02T02:45-08:00 (Metricool getScheduledPosts)"
+      "status_checked": "2026-11-02T03:45-08:00 (Metricool getScheduledPosts)",
+      "public_urls": {
+        "tiktok": "https://www.tiktok.com/@siyalking149/video/7703504205880806657",
+        "youtube": "https://www.youtube.com/shorts/HGYwcvonstQ",
+        "facebook": "https://facebook.com/reel/1481520173883865",
+        "instagram": "https://www.instagram.com/reel/DfO_RP3ApqP/"
+      },
+      "metricool_id": 413725244
     },
     {
       "id": "2026-11-02_v1",
@@ -66,7 +73,7 @@
         "facebook": "PENDING",
         "instagram": "PENDING"
       },
-      "status_checked": "2026-11-02T02:45-08:00 (Metricool getScheduledPosts)"
+      "status_checked": "2026-11-02T03:45-08:00 (Metricool getScheduledPosts)"
     },
     {
       "id": "2026-11-02_v2",
@@ -108,7 +115,7 @@
         "facebook": "PENDING",
         "instagram": "PENDING"
       },
-      "status_checked": "2026-11-02T02:45-08:00 (Metricool getScheduledPosts)"
+      "status_checked": "2026-11-02T03:45-08:00 (Metricool getScheduledPosts)"
     }
   ],
   "notes": [
