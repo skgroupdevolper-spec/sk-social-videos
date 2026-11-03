@@ -24,7 +24,7 @@
         "facebook": "PUBLISHED",
         "instagram": "PUBLISHED"
       },
-      "status_checked": "2026-11-02T03:45-08:00 (Metricool getScheduledPosts)",
+      "status_checked": "2026-11-03T02:20-08:00 (Metricool getScheduledPosts)",
       "public_urls": {
         "tiktok": "https://www.tiktok.com/@siyalking149/video/7703504205880806657",
         "youtube": "https://www.youtube.com/shorts/HGYwcvonstQ",
@@ -62,18 +62,24 @@
         "seed": 4417
       },
       "cta": "Is your site slow? Send me your link and let's look at it together.",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_for": "2026-11-02T06:00:00-08:00",
       "metricool_id": 413751412,
       "metricool_uuid": "374460600615914163",
       "title": "Why Is My Website So Slow? 4 Common Causes and How to Fix Them",
       "platform_status": {
-        "tiktok": "PENDING",
-        "youtube": "PENDING",
-        "facebook": "PENDING",
-        "instagram": "PENDING"
+        "tiktok": "PUBLISHED",
+        "youtube": "PUBLISHED",
+        "facebook": "PUBLISHED",
+        "instagram": "PUBLISHED"
       },
-      "status_checked": "2026-11-02T03:45-08:00 (Metricool getScheduledPosts)"
+      "status_checked": "2026-11-03T02:20-08:00 (Metricool getScheduledPosts)",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1483497053697447",
+        "instagram": "https://www.instagram.com/reel/DfPenmCAtrL/",
+        "tiktok": "https://www.tiktok.com/@siyalking149/video/7703574822625807637",
+        "youtube": "https://www.youtube.com/shorts/KL6iP1YmKdM"
+      }
     },
     {
       "id": "2026-11-02_v2",
@@ -104,24 +110,124 @@
         "seed": 9031
       },
       "cta": "Hiring? Let's talk.",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_for": "2026-11-02T12:00:00-08:00",
       "metricool_id": 413751635,
       "metricool_uuid": "1940391653934647925",
       "title": "Hiring a Remote WordPress Developer? What I Bring to Your Team",
       "platform_status": {
-        "tiktok": "PENDING",
-        "youtube": "PENDING",
-        "facebook": "PENDING",
-        "instagram": "PENDING"
+        "tiktok": "PUBLISHED",
+        "youtube": "PUBLISHED",
+        "facebook": "PUBLISHED",
+        "instagram": "PUBLISHED"
       },
-      "status_checked": "2026-11-02T03:45-08:00 (Metricool getScheduledPosts)"
+      "status_checked": "2026-11-03T02:20-08:00 (Metricool getScheduledPosts)",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/28760720366956079",
+        "instagram": "https://www.instagram.com/reel/DfQHymaDH01/",
+        "tiktok": "https://www.tiktok.com/@siyalking149/video/7703667516874231061",
+        "youtube": "https://www.youtube.com/shorts/D_wDmHe8Tf0"
+      }
+    },
+    {
+      "id": "2026-11-03_v1",
+      "date": "2026-11-03",
+      "type": "authority",
+      "pillar": "Business management systems (custom CRM)",
+      "topic": "5 signs your business has outgrown spreadsheets — custom CRM",
+      "hook": "Is your business still running on spreadsheets?",
+      "title": "Custom CRM vs Spreadsheets: 5 Signs Your Business Outgrew Excel",
+      "primary_keyword": "custom CRM for small business",
+      "secondary_keywords": [
+        "outgrown spreadsheets",
+        "CRM vs spreadsheets",
+        "custom business management software",
+        "custom CRM development",
+        "replace Excel with CRM"
+      ],
+      "audience": "small and mid-size business owners, ops managers",
+      "main_benefit": "one source of truth for sales, clients and tasks",
+      "theme": "graphite",
+      "design": "graphite theme: hook + ✕ list + compare + admin dashboard + steps + cta + endscreen",
+      "scenes": [
+        "hook",
+        "list",
+        "compare",
+        "dashboard",
+        "steps",
+        "cta",
+        "endscreen"
+      ],
+      "music": {
+        "mood": "lofi",
+        "seed": 6203
+      },
+      "cta": "Outgrowing your spreadsheets? Let's turn them into a system. / Plan it with us on WhatsApp / Message SK Developer on WhatsApp",
+      "voiceover": "none (TTS unavailable in run; script in spec vo fields)",
+      "duration_s": 38.5,
+      "scheduled_for": "2026-11-03T06:00:00-08:00",
+      "status": "created",
+      "platform_status": {
+        "tiktok": "NOT_SCHEDULED",
+        "youtube": "NOT_SCHEDULED",
+        "facebook": "NOT_SCHEDULED",
+        "instagram": "NOT_SCHEDULED"
+      }
+    },
+    {
+      "id": "2026-11-03_v2",
+      "date": "2026-11-03",
+      "type": "capability",
+      "pillar": "Shopify",
+      "topic": "Shopify app bloat — custom theme sections instead of another app",
+      "hook": "Your Shopify store doesn't need another app.",
+      "title": "Shopify App Bloat? Use Custom Theme Sections Instead",
+      "primary_keyword": "Shopify app bloat",
+      "secondary_keywords": [
+        "Shopify custom sections",
+        "custom Shopify theme development",
+        "Shopify apps vs custom code",
+        "Shopify Liquid sections",
+        "Shopify developer"
+      ],
+      "audience": "Shopify store owners, eCommerce brands",
+      "main_benefit": "fewer app fees and scripts; sections the team edits without code",
+      "theme": "studio",
+      "design": "studio theme: kinetic + statement + chips + browser + Liquid code + ✓ list + cta",
+      "scenes": [
+        "kinetic",
+        "statement",
+        "chips",
+        "browser",
+        "code",
+        "list",
+        "cta"
+      ],
+      "music": {
+        "mood": "upbeat",
+        "seed": 2758
+      },
+      "cta": "Is your app list getting long? Let's build a leaner store. / Talk Shopify on WhatsApp",
+      "voiceover": "none (TTS unavailable in run; script in spec vo fields)",
+      "duration_s": 36.9,
+      "scheduled_for": "2026-11-03T12:00:00-08:00",
+      "status": "created",
+      "platform_status": {
+        "tiktok": "NOT_SCHEDULED",
+        "youtube": "NOT_SCHEDULED",
+        "facebook": "NOT_SCHEDULED",
+        "instagram": "NOT_SCHEDULED"
+      }
     }
   ],
   "notes": [
     {
       "date": "2026-11-02",
       "note": "Brand change from 2026-11-03: SK Developer company brand, WhatsApp-only contact, no GitHub/portfolio links, 4 platform-specific packages and posts per video. Earlier entries kept unchanged."
+    },
+    {
+      "date": "2026-11-03",
+      "note": "Owner asked mid-run (2026-11-03) to add English voiceover to all videos. Specs now carry a per-scene 'vo' script. Rendering voice needs a TTS engine: pip/apt/HuggingFace are blocked in the sandbox and running a downloaded Piper binary was denied, so 2026-11-03 videos are music-only. Needs owner decision."
     }
   ]
 }

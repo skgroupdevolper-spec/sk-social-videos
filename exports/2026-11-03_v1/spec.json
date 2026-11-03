@@ -1,0 +1,32 @@
+{
+ "id": "2026-11-03_v1",
+ "theme": "graphite",
+ "music": {"mood": "lofi", "seed": 6203},
+ "brand": {"name": "SK Developer", "role": "Full-Stack Software Development", "mark": "SK", "phone": "+92 325 2314412"},
+ "scenes": [
+  {"type": "hook", "label": "Quick self-check", "lines": ["Is your business", "still running on"], "accent_line": "spreadsheets?", "sub": "Five signs it's time for a real system.",
+   "vo": "Is your business still running on spreadsheets? Here are five signs it's time for a real system."},
+  {"type": "list", "title": "Sound familiar?", "good": false, "items": [
+    ["Data in ten files", "Everyone keeps their own copy"],
+    ["Missed follow-ups", "Leads slip through the cracks"],
+    ["Copy-paste all day", "Same data typed twice"],
+    ["Slow, fragile sheets", "One wrong edit breaks it"],
+    ["No single view", "Reports take hours to build"]],
+   "vo": "Data in ten different files. Missed follow-ups. Copy and paste all day. Fragile sheets. And no single view of the business."},
+  {"type": "compare", "title": "Spreadsheets vs a custom system", "left": {"label": "Spreadsheets", "items": ["Manual updates", "Scattered versions", "No access control"]},
+   "right": {"label": "Custom CRM", "items": ["Updates in real time", "One source of truth", "Roles and permissions"]},
+   "vo": "A custom system replaces scattered versions with one source of truth, real-time updates, and the right access for every role."},
+  {"type": "dashboard", "kind": "admin", "title": "Sales, clients and tasks in one place", "menu": ["Overview", "Leads", "Clients", "Tasks", "Reports"], "label": "Concept demo",
+   "callouts": ["Follow-up reminders", "Live pipeline", "Reports in one click"],
+   "vo": "Picture sales, clients and tasks in one dashboard, with follow-up reminders and reports in a single click."},
+  {"type": "steps", "title": "How we build it", "sub": "Shaped around how your team works", "items": [
+    ["Map your workflow", "Who does what, and when"],
+    ["Design the system", "Screens, roles and data"],
+    ["Build and migrate", "Your sheets move across"]],
+   "vo": "We map your workflow, design the system around it, then build it and move your existing data across."},
+  {"type": "cta", "kicker": "Outgrowing your spreadsheets?", "lines": ["Let's turn them", "into a system."], "sub": "Share how your team works today. We'll outline the build with you.",
+   "button": "Plan it with us on WhatsApp", "link": "wa.me/923252314412", "link_label": "WhatsApp",
+   "vo": "Outgrowing your spreadsheets? Message SK Developer on WhatsApp, and let's turn them into a system."},
+  {"type": "endscreen", "tagline": "Custom CRM, ERP and business management systems", "button": "Message SK Developer on WhatsApp"}
+ ]
+}

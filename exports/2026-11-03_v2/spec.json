@@ -1,0 +1,30 @@
+{
+ "id": "2026-11-03_v2",
+ "theme": "studio",
+ "music": {"mood": "upbeat", "seed": 2758},
+ "brand": {"name": "SK Developer", "role": "Full-Stack Software Development", "mark": "SK", "phone": "+92 325 2314412"},
+ "scenes": [
+  {"type": "kinetic", "words": ["Your", "Shopify", "store", "doesn't", "need", "another", "app."], "accent": [5], "size": 128, "sub": "It might need one good section.",
+   "vo": "Your Shopify store doesn't always need another app. Sometimes it needs one good section."},
+  {"type": "statement", "label": "The hidden cost", "lines": ["Every app adds", "fees, scripts", "and settings."], "accent": [1], "sub": "And overlapping apps are hard to manage.",
+   "vo": "Every app adds monthly fees, extra scripts and more settings to manage."},
+  {"type": "chips", "title": "Built as theme sections", "sub": "Edited in the Shopify editor, no code", "items": ["FAQ blocks", "Comparison tables", "Trust badges", "Size guides", "Campaign banners", "Value rows"],
+   "vo": "Many of these are simply content: FAQs, comparison tables, trust badges, size guides and campaign banners. A custom section handles them inside your theme."},
+  {"type": "browser", "title": "One section, many pages", "url": "yourstore.com/products", "label": "Concept demo",
+   "callouts": ["Edit text in the theme editor", "Reuse on any template", "No extra app script"],
+   "vo": "Your team edits it in the theme editor and reuses it on any page."},
+  {"type": "code", "title": "Clean Liquid, made for your theme", "file": "sections/faq.liquid", "type_time": 3.0,
+   "keywords": ["{%", "%}", "for", "endfor", "schema", "endschema"],
+   "lines": ["{% for block in section.blocks %}", "  <details class=\"faq\">", "    <summary>{{ block.settings.q }}</summary>", "    {{ block.settings.a }}", "  </details>", "{% endfor %}", "{% schema %} ... {% endschema %}"],
+   "caption": "Simple settings your team can actually use.",
+   "vo": "Clean Liquid code, with simple settings your team can actually use."},
+  {"type": "list", "title": "When an app is still right", "good": true, "items": [
+    ["Reviews and ratings", "Their own data and moderation"],
+    ["Subscriptions", "Billing that needs upkeep"],
+    ["Loyalty and returns", "Ongoing workflows"]],
+   "vo": "Apps still make sense for reviews, subscriptions, loyalty and returns. The goal is a lean, balanced store."},
+  {"type": "cta", "kicker": "Is your app list getting long?", "lines": ["Let's build a", "leaner store."], "sub": "Shopify theme sections, integrations and custom features.",
+   "button": "Talk Shopify on WhatsApp", "link": "wa.me/923252314412", "link_label": "WhatsApp",
+   "vo": "Is your app list getting long? Send your store to SK Developer on WhatsApp, and let's build a leaner store."}
+ ]
+}
