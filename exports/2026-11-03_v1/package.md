@@ -8,7 +8,7 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scenes: cta + endscreen, wording: "Outgrowing your spreadsheets? Let's turn them into a system." / button "Plan it with us on WhatsApp" / end card "Message SK Developer on WhatsApp" |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | SCHEDULE_V1 |
+| Uploaded / scheduled | ✅ all 4, autoPublish true, video uploaded to Metricool | tiktok: id 415067090 / uuid -7930824161391392764 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-7930824161391392764) · youtube: id 415067612 / uuid -2382103523981705187 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2382103523981705187) · facebook: id 415067628 / uuid 71357213206790259 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=71357213206790259) · instagram: id 415067650 / uuid -7124706480171237085 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-7124706480171237085) |
 | Published | ⏳ all 4 platforms (scheduled 2026-11-03 06:00 America/Los_Angeles) |
 
 ## Concept

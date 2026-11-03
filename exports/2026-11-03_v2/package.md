@@ -8,7 +8,7 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta, wording: "Is your app list getting long? Let's build a leaner store." / button "Talk Shopify on WhatsApp" |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | SCHEDULE_V2 |
+| Uploaded / scheduled | ✅ all 4, autoPublish true, video uploaded to Metricool | tiktok: id 415067946 / uuid 2667968801705642030 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2667968801705642030) · youtube: id 415067961 / uuid -8167733264491852434 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-8167733264491852434) · facebook: id 415067986 / uuid 2971666972948906166 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2971666972948906166) · instagram: id 415068022 / uuid 8103512172508037610 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8103512172508037610) |
 | Published | ⏳ all 4 platforms (scheduled 2026-11-03 12:00 America/Los_Angeles) |
 
 ## Concept
