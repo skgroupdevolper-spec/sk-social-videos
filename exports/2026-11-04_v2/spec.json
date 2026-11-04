@@ -1,0 +1,126 @@
+{
+ "id": "2026-11-04_v2",
+ "theme": "ink",
+ "music": {
+  "mood": "chill",
+  "seed": 8126
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "kinetic",
+   "words": [
+    "Bookings",
+    "by",
+    "phone,",
+    "DMs",
+    "and",
+    "a",
+    "notebook?"
+   ],
+   "accent": [
+    6
+   ],
+   "size": 128,
+   "sub": "There's a calmer way to run your diary.",
+   "vo": "Taking bookings by phone, DMs and a notebook? There's a calmer way to run your diary."
+  },
+  {
+   "type": "steps",
+   "title": "How your customers would book",
+   "sub": "Any time, from any phone",
+   "items": [
+    [
+     "Pick a service",
+     "With your real prices"
+    ],
+    [
+     "Choose a free slot",
+     "Live availability, no double bookings"
+    ],
+    [
+     "Confirm and get reminded",
+     "Message before the visit"
+    ]
+   ],
+   "vo": "Customers pick a service, choose a free slot from live availability, then get a reminder before their visit."
+  },
+  {
+   "type": "dashboard",
+   "kind": "booking",
+   "title": "Your team's side of it",
+   "menu": [
+    "Today",
+    "Calendar",
+    "Staff",
+    "Clients",
+    "Deposits"
+   ],
+   "label": "Concept demo",
+   "callouts": [
+    "Each staff member's schedule",
+    "Deposits and cancellation rules",
+    "Client history in one place"
+   ],
+   "vo": "Your team sees each person's schedule, deposits and cancellation rules, and every client's history in one place."
+  },
+  {
+   "type": "compare",
+   "title": "Generic booking app vs your own platform",
+   "left": {
+    "label": "Generic app",
+    "items": [
+     "Fixed rules and fields",
+     "Per-seat fees as you grow",
+     "Their branding"
+    ]
+   },
+   "right": {
+    "label": "Custom build",
+    "items": [
+     "Your own rules",
+     "Scales with you",
+     "Your brand and data"
+    ]
+   },
+   "vo": "Generic apps are a good start. A custom platform follows your own rules, grows with you, and keeps your brand and your data."
+  },
+  {
+   "type": "chips",
+   "title": "Built for",
+   "sub": "Web platform, with an app where it makes sense",
+   "items": [
+    "Clinics",
+    "Salons & spas",
+    "Restaurants",
+    "Rentals",
+    "Studios & classes",
+    "Consultants"
+   ],
+   "vo": "We build booking platforms for clinics, salons, restaurants, rentals, studios and consultants."
+  },
+  {
+   "type": "cta",
+   "kicker": "Ready to fill your calendar online?",
+   "lines": [
+    "Let's design your",
+    "booking platform."
+   ],
+   "sub": "Tell us how you take bookings today. We'll map the flow with you.",
+   "button": "Start the chat on WhatsApp",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "Ready to take bookings online? Start the chat with SK Developer on WhatsApp, and let's design your booking platform."
+  },
+  {
+   "type": "endscreen",
+   "tagline": "Booking platforms, dashboards and custom web apps",
+   "button": "Plan your booking system on WhatsApp"
+  }
+ ]
+}

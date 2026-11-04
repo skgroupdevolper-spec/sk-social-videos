@@ -1,0 +1,131 @@
+{
+ "id": "2026-11-04_v1",
+ "theme": "flame",
+ "music": {
+  "mood": "corporate",
+  "seed": 5381
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "label": "WordPress, honestly",
+   "lines": [
+    "Your page builder",
+    "was a great start.",
+    "Is it still the right fit?"
+   ],
+   "accent": [
+    2
+   ],
+   "sub": "Page builder vs custom theme: an honest look.",
+   "vo": "Your page builder was a great start. But is it still the right fit for your business?"
+  },
+  {
+   "type": "compare",
+   "title": "Same design, two ways to build it",
+   "left": {
+    "label": "Page builder",
+    "items": [
+     "Extra layers of markup",
+     "Loads unused code",
+     "Tied to one plugin"
+    ]
+   },
+   "right": {
+    "label": "Custom",
+    "items": [
+     "Only the code you need",
+     "Lean, clean markup",
+     "Easy to extend"
+    ]
+   },
+   "vo": "A page builder wraps your content in extra layers and loads code for features you may never use. A custom theme ships only what your site needs."
+  },
+  {
+   "type": "code",
+   "title": "Custom blocks your team can edit",
+   "file": "functions.php",
+   "type_time": 3.0,
+   "keywords": [
+    "add_action(",
+    "function",
+    "register_block_type(",
+    "__DIR__"
+   ],
+   "lines": [
+    "// One block, built for your brand",
+    "add_action('init', function () {",
+    "  register_block_type(",
+    "    __DIR__ . '/blocks/hero'",
+    "  );",
+    "});"
+   ],
+   "caption": "Editors fill in fields. The design stays on-brand.",
+   "vo": "With custom blocks, your team still edits content in WordPress, and the design stays on-brand."
+  },
+  {
+   "type": "list",
+   "title": "When a page builder is fine",
+   "good": true,
+   "items": [
+    [
+     "Short campaign pages",
+     "Live for weeks, not years"
+    ],
+    [
+     "A quick first launch",
+     "Tight budget, simple site"
+    ],
+    [
+     "Frequent layout changes",
+     "By a non-technical team"
+    ]
+   ],
+   "vo": "A page builder is still fine for short campaigns, a quick first launch, or teams who change layouts all the time."
+  },
+  {
+   "type": "steps",
+   "title": "Moving to a custom theme",
+   "sub": "Without losing your content",
+   "items": [
+    [
+     "Audit your pages",
+     "Find the repeating layouts"
+    ],
+    [
+     "Build custom blocks",
+     "Matched to your brand"
+    ],
+    [
+     "Rebuild and test",
+     "Speed checked on real phones"
+    ]
+   ],
+   "vo": "If you're ready to move, we audit your pages, build custom blocks for your brand, then rebuild and test on real phones."
+  },
+  {
+   "type": "cta",
+   "kicker": "Outgrown your page builder?",
+   "lines": [
+    "Let's build a theme",
+    "that fits your brand."
+   ],
+   "sub": "Custom WordPress themes, blocks and WooCommerce stores.",
+   "button": "Ask us on WhatsApp",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "Outgrown your page builder? Ask SK Developer on WhatsApp, and let's build a theme that fits your brand."
+  },
+  {
+   "type": "endscreen",
+   "tagline": "Custom WordPress themes, plugins and full-stack web apps",
+   "button": "Send us your site on WhatsApp"
+  }
+ ]
+}
