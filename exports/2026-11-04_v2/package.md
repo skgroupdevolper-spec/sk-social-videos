@@ -8,7 +8,7 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scenes: cta + endscreen, wording: "Ready to fill your calendar online? Let's design your booking platform." / button "Start the chat on WhatsApp" / end card "Plan your booking system on WhatsApp" |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | SCHEDULING_V2 |
+| Uploaded / scheduled | ✅ all 4, autoPublish true, video uploaded to Metricool | tiktok: id 416344901 / uuid -1191442970026293045 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-1191442970026293045) · youtube: id 416344920 / uuid -8078012773830276583 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-8078012773830276583) · facebook: id 416344936 / uuid 331276773512597123 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=331276773512597123) · instagram: id 416344952 / uuid -1273595732989098094 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-1273595732989098094) (2026-11-04 12:00 America/Los_Angeles) |
 | Published | ⏳ all 4 platforms (scheduled 2026-11-04 12:00 America/Los_Angeles) |
 
 ## Concept
