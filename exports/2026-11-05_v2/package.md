@@ -3,12 +3,12 @@
 ## Production status
 | Step | Status | Evidence |
 |---|---|---|
-| Video created | ✅ | exports/2026-11-05_v2/video.mp4 · 32.3 s · 1080×1920 · 30 fps · audio yes (English voiceover + music, burned-in subtitles) — re-rendered 2026-11-05 ~10:30 PT at the owner's request; the silent first version was replaced before publishing |
+| Video created | ✅ | exports/2026-11-05_v2/video.mp4 · 32.3 s · 1080×1920 · 30 fps · audio yes (English voiceover + music, burned-in subtitles) — re-rendered 2026-11-05 ~09:40 PT at the owner's request; the silent first version was replaced before publishing |
 | English voiceover | ✅ | Offline Piper voice en_US-libritts_r-medium, speaker 8 (male), speed 1.05; subtitles burned in (orange bar style) |
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: endscreen, wording: "AI chatbots, automation and custom web apps" / green button "Build your AI assistant on WhatsApp" + +92 325 2314412 + wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | ✅ all 4, autoPublish true, video uploaded to Metricool | tiktok: id 417574765 / uuid 381528548225337160 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=381528548225337160) · youtube: id 417574783 / uuid 1829843872871104532 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=1829843872871104532) · facebook: id 417574799 / uuid -3287362734076507964 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-3287362734076507964) · instagram: id 417574823 / uuid 942909571811264394 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=942909571811264394) (2026-11-05 12:00 America/Los_Angeles) |
+| Uploaded / scheduled | ✅ all 4, autoPublish true; media replaced 09:39 PT with the voiced version (commit 699604b) | tiktok: id 418032531 / uuid 381528548225337160 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=381528548225337160) · youtube: id 418032554 / uuid 1829843872871104532 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=1829843872871104532) · facebook: id 418032569 / uuid -3287362734076507964 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-3287362734076507964) · instagram: id 418032601 / uuid 942909571811264394 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=942909571811264394) (2026-11-05 12:00 America/Los_Angeles) |
 | Published | ⏳ all 4 platforms (scheduled 2026-11-05 12:00 America/Los_Angeles) | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ## Concept

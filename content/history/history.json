@@ -538,33 +538,33 @@
    },
    "metricool_posts": {
     "tiktok": {
-     "id": 417574765,
+     "id": 418032531,
      "uuid": "381528548225337160",
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=381528548225337160"
     },
     "youtube": {
-     "id": 417574783,
+     "id": 418032554,
      "uuid": "1829843872871104532",
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=1829843872871104532"
     },
     "facebook": {
-     "id": 417574799,
+     "id": 418032569,
      "uuid": "-3287362734076507964",
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-3287362734076507964"
     },
     "instagram": {
-     "id": 417574823,
+     "id": 418032601,
      "uuid": "942909571811264394",
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=942909571811264394"
     }
    },
-   "status_checked": "2026-11-05T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool)",
+   "status_checked": "2026-11-05T09:39-08:00 (updateScheduledPost: media replaced with voiced version, commit 699604b; ids changed, uuids same)",
    "layout": {
     "cards": "glass",
     "captions": "bar",
     "progress": "top"
    },
-   "note": "Re-rendered 2026-11-05 ~10:30 PT with voice, subtitles, icons and illustrated character at owner's request; Metricool media updated before the 12:00 slot."
+   "note": "Re-rendered 2026-11-05 ~09:40 PT with voice, subtitles, icons and illustrated character at owner's request; Metricool media updated before the 12:00 slot."
   }
  ],
  "notes": [

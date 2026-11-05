@@ -1,5 +1,7 @@
 # Skills & topic rotation (SK Developer)
 
+**From 2026-11-05: web development first.** At least one video per day is core web development (websites, WordPress, Shopify, WooCommerce, custom web apps, speed, responsive UI, SEO-ready builds, redesigns, landing pages). See content/INSTRUCTIONS_UPDATE_2026-11-05.md §5.
+
 The owner asked (2026-11-02) to focus on custom web development **and also** keep using WordPress, Shopify and all other skills. Rotate through the pillars below so every skill appears regularly. Check history: don't use the same pillar for both videos of a day, and don't repeat a pillar within 3 days unless research shows a strong reason.
 
 | Pillar | Real capabilities to talk about | Example angles (write new ones; don't copy) |
