@@ -1,0 +1,129 @@
+{
+ "id": "2026-11-05_v2",
+ "theme": "graphite",
+ "music": {
+  "mood": "house",
+  "seed": 4682
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "kinetic",
+   "words": [
+    "Same",
+    "questions.",
+    "Every",
+    "day.",
+    "Even",
+    "at",
+    "2",
+    "a.m."
+   ],
+   "accent": [
+    6,
+    7
+   ],
+   "size": 130,
+   "sub": "What if your website could answer them?",
+   "vo": "Same questions. Every day. Even at 2 a.m. What if your website could answer them for you?"
+  },
+  {
+   "type": "chat",
+   "title": "An AI assistant that knows your business",
+   "bot": "Store assistant",
+   "label": "Concept demo",
+   "messages": [
+    [
+     "user",
+     "Has my order shipped yet?"
+    ],
+    [
+     "bot",
+     "Yes, it left today. Tracking is in your email."
+    ],
+    [
+     "user",
+     "Can I speak to someone?"
+    ],
+    [
+     "bot",
+     "Of course. Connecting you to our team, with this chat attached."
+    ]
+   ],
+   "caption": "Answers from your own content. A person when it matters.",
+   "vo": "An AI assistant that answers from your own content and systems, and hands the chat to your team when a person is needed."
+  },
+  {
+   "type": "compare",
+   "title": "Generic bot vs custom assistant",
+   "left": {
+    "label": "Generic bot",
+    "items": [
+     "Vague, scripted replies",
+     "Can't see your orders",
+     "Dead ends"
+    ]
+   },
+   "right": {
+    "label": "Custom",
+    "items": [
+     "Trained on your content",
+     "Sees your orders",
+     "Hands over to staff"
+    ]
+   },
+   "vo": "A generic bot gives vague replies and can't see your data. A custom assistant is trained on your content, connected to your systems, and knows when to hand over."
+  },
+  {
+   "type": "list",
+   "title": "What a good assistant won't do",
+   "good": false,
+   "items": [
+    [
+     "Guess when it doesn't know",
+     "It asks or hands over"
+    ],
+    [
+     "Hide the human option",
+     "Your team is one tap away"
+    ],
+    [
+     "Share private data",
+     "Access follows your rules"
+    ]
+   ],
+   "vo": "A good assistant doesn't guess, doesn't hide the human option, and never shares data it shouldn't."
+  },
+  {
+   "type": "steps",
+   "title": "How we build yours",
+   "sub": "Website, store or customer portal",
+   "items": [
+    [
+     "Gather your knowledge",
+     "FAQs, policies, products"
+    ],
+    [
+     "Connect your systems",
+     "Orders, bookings, CRM"
+    ],
+    [
+     "Test with real questions",
+     "Then launch with handoff"
+    ]
+   ],
+   "vo": "We gather your knowledge, connect your systems, and test with real customer questions before launch."
+  },
+  {
+   "type": "endscreen",
+   "tagline": "AI chatbots, automation and custom web apps",
+   "button": "Build your AI assistant on WhatsApp",
+   "vo": "Want an assistant that knows your business? Build it with SK Developer. Message us on WhatsApp."
+  }
+ ]
+}

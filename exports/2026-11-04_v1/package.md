@@ -9,7 +9,7 @@
 | WhatsApp CTA / end screen in video | ✅ | scenes: cta + endscreen, wording: "Outgrown your page builder? Let's build a theme that fits your brand." / button "Ask us on WhatsApp" / end card "Send us your site on WhatsApp" |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
 | Uploaded / scheduled | ✅ all 4, autoPublish true, video uploaded to Metricool | tiktok: id 416344455 / uuid 6875700858605881898 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=6875700858605881898) · youtube: id 416344468 / uuid -7434377098424530174 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-7434377098424530174) · facebook: id 416345051 / uuid -3883276785342398346 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-3883276785342398346) · instagram: id 416344514 / uuid 2837353347384099240 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2837353347384099240) (2026-11-04 06:00 America/Los_Angeles) |
-| Published | ⏳ all 4 platforms (scheduled 2026-11-04 06:00 America/Los_Angeles) |
+| Published | ✅ all 4 platforms (Metricool PUBLISHED, checked 2026-11-05 02:45 PT) | tiktok [link](https://www.tiktok.com/@siyalking149/video/7704316985223548212) · youtube [link](https://www.youtube.com/shorts/kJ_B4qLp7V8) · facebook [link](https://facebook.com/reel/1697497871895557) · instagram [link](https://www.instagram.com/reel/DfUoS9ECvwv/) |
 
 ## Concept
 - Pillar / audience / angle: WordPress · business owners with an Elementor/Divi-style builder site, marketing managers · balanced "is your builder still the right fit?" — compare, custom block code, when a builder is fine, how to move.

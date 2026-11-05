@@ -314,12 +314,12 @@
    "scheduled_for": "2026-11-04T06:00:00-08:00",
    "date": "2026-11-04",
    "voiceover": "none (TTS unavailable in run; script in spec vo fields)",
-   "status": "scheduled",
+   "status": "published",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "PUBLISHED",
+    "youtube": "PUBLISHED",
+    "facebook": "PUBLISHED",
+    "instagram": "PUBLISHED"
    },
    "metricool_posts": {
     "tiktok": {
@@ -343,7 +343,13 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2837353347384099240"
     }
    },
-   "status_checked": "2026-11-04T02:53-08:00 (createScheduledPost responses)"
+   "status_checked": "2026-11-05T02:45-08:00 (Metricool getScheduledPosts: all 4 PUBLISHED)",
+   "public_urls": {
+    "tiktok": "https://www.tiktok.com/@siyalking149/video/7704316985223548212",
+    "youtube": "https://www.youtube.com/shorts/kJ_B4qLp7V8",
+    "facebook": "https://facebook.com/reel/1697497871895557",
+    "instagram": "https://www.instagram.com/reel/DfUoS9ECvwv/"
+   }
   },
   {
    "id": "2026-11-04_v2",
@@ -382,12 +388,12 @@
    "scheduled_for": "2026-11-04T12:00:00-08:00",
    "date": "2026-11-04",
    "voiceover": "none (TTS unavailable in run; script in spec vo fields)",
-   "status": "scheduled",
+   "status": "published",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "PUBLISHED",
+    "youtube": "PUBLISHED",
+    "facebook": "PUBLISHED",
+    "instagram": "PUBLISHED"
    },
    "metricool_posts": {
     "tiktok": {
@@ -411,7 +417,102 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-1273595732989098094"
     }
    },
-   "status_checked": "2026-11-04T02:53-08:00 (createScheduledPost responses)"
+   "status_checked": "2026-11-05T02:45-08:00 (Metricool getScheduledPosts: all 4 PUBLISHED)",
+   "public_urls": {
+    "tiktok": "https://www.tiktok.com/@siyalking149/video/7704407997493071110",
+    "youtube": "https://www.youtube.com/shorts/V91vIyWmjvo",
+    "facebook": "https://facebook.com/reel/1698324035244912",
+    "instagram": "https://www.instagram.com/reel/DfVRVwJEWAS/"
+   }
+  },
+  {
+   "id": "2026-11-05_v1",
+   "type": "educational",
+   "pillar": "APIs & integrations",
+   "topic": "API integration for small business — stop double data entry between store, CRM, accounting and shipping",
+   "hook": "Typing the same order into three systems? There's a better way.",
+   "title": "API Integration for Small Business: Stop Typing the Same Data Twice",
+   "primary_keyword": "api integration for small business",
+   "secondary_keywords": [
+    "eliminate double data entry",
+    "connect business apps",
+    "crm and accounting integration",
+    "webhook automation",
+    "shopify / woocommerce integration"
+   ],
+   "audience": "small and mid-size businesses and eCommerce brands using several disconnected tools",
+   "main_benefit": "one event (new order) updates CRM, invoice and shipping automatically — no retyping",
+   "theme": "paper",
+   "design": "paper theme: hook + tool chips + statement + data-flow steps + Node.js webhook code (illustrative) + numbered where-to-start list + cta",
+   "scenes": [
+    "hook",
+    "chips",
+    "statement",
+    "steps",
+    "code",
+    "list",
+    "cta"
+   ],
+   "music": {
+    "mood": "lofi",
+    "seed": 7349
+   },
+   "cta": "Tired of copy-paste between apps? Let's connect your systems. / Map it out on WhatsApp",
+   "duration_s": 37.6,
+   "scheduled_for": "2026-11-05T06:00:00-08:00",
+   "date": "2026-11-05",
+   "voiceover": "none (TTS still unavailable in sandbox; script in spec vo fields)",
+   "status": "created",
+   "platform_status": {
+    "tiktok": "NOT_SCHEDULED",
+    "youtube": "NOT_SCHEDULED",
+    "facebook": "NOT_SCHEDULED",
+    "instagram": "NOT_SCHEDULED"
+   }
+  },
+  {
+   "id": "2026-11-05_v2",
+   "type": "capability",
+   "pillar": "AI chatbots & automation",
+   "topic": "Custom AI customer support chatbot grounded in your content, connected to your systems, with human handoff",
+   "hook": "Same questions. Every day. Even at 2 a.m.",
+   "title": "Custom AI Chatbot for Small Business: Answers + Human Handoff",
+   "primary_keyword": "ai customer support chatbot for small business",
+   "secondary_keywords": [
+    "custom ai chatbot",
+    "ai chatbot for website",
+    "whatsapp ai chatbot",
+    "chatbot with human handoff",
+    "ai chatbot trained on your business data"
+   ],
+   "audience": "online stores, service businesses, clinics — anyone answering repeat customer questions",
+   "main_benefit": "customers get grounded answers any hour; people take over when needed, with the chat attached",
+   "theme": "graphite",
+   "design": "graphite theme: kinetic + AI chat (Concept demo) + generic vs custom compare + won't-do list (red ✕) + build steps + WhatsApp endscreen",
+   "scenes": [
+    "kinetic",
+    "chat",
+    "compare",
+    "list",
+    "steps",
+    "endscreen"
+   ],
+   "music": {
+    "mood": "house",
+    "seed": 4682
+   },
+   "cta": "Build your AI assistant on WhatsApp (endscreen) / AI chatbots, automation and custom web apps",
+   "duration_s": 34.2,
+   "scheduled_for": "2026-11-05T12:00:00-08:00",
+   "date": "2026-11-05",
+   "voiceover": "none (TTS still unavailable in sandbox; script in spec vo fields)",
+   "status": "created",
+   "platform_status": {
+    "tiktok": "NOT_SCHEDULED",
+    "youtube": "NOT_SCHEDULED",
+    "facebook": "NOT_SCHEDULED",
+    "instagram": "NOT_SCHEDULED"
+   }
   }
  ],
  "notes": [
@@ -422,6 +523,10 @@
   {
    "date": "2026-11-03",
    "note": "Owner asked mid-run (2026-11-03) to add English voiceover to all videos. Specs now carry a per-scene 'vo' script. Rendering voice needs a TTS engine: pip/apt/HuggingFace are blocked in the sandbox and running a downloaded Piper binary was denied, so 2026-11-03 videos are music-only. Needs owner decision."
+  },
+  {
+   "date": "2026-11-05",
+   "note": "Only 5 themes exist, so today's two videos cannot both avoid the last 4 videos' themes: v1 uses paper (unused so far), v2 uses graphite (last used 2026-11-03_v1, with a different music mood: house instead of lofi). Theme+music pairs paper+lofi and graphite+house are new."
   }
  ]
 }

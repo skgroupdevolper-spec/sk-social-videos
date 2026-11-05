@@ -1,0 +1,133 @@
+{
+ "id": "2026-11-05_v1",
+ "theme": "paper",
+ "music": {
+  "mood": "lofi",
+  "seed": 7349
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "label": "Integrations, explained",
+   "lines": [
+    "Typing the same order",
+    "into three systems?"
+   ],
+   "accent_line": "There's a better way.",
+   "vo": "Typing the same order into three different systems? There's a better way."
+  },
+  {
+   "type": "chips",
+   "title": "Your tools today",
+   "sub": "Each one holds part of the story",
+   "items": [
+    "Online store",
+    "CRM",
+    "Accounting",
+    "Shipping",
+    "Spreadsheets",
+    "Email"
+   ],
+   "vo": "Your store, your CRM, your accounting, shipping and spreadsheets each hold part of the story, but they don't talk to each other."
+  },
+  {
+   "type": "statement",
+   "label": "The hidden job",
+   "lines": [
+    "The link between",
+    "your tools",
+    "is a person."
+   ],
+   "accent": [
+    2
+   ],
+   "sub": "Copy, paste, check, repeat. Every day.",
+   "vo": "So the link between your tools is a person, copying, pasting and checking, every single day."
+  },
+  {
+   "type": "steps",
+   "title": "With an API integration",
+   "sub": "One event updates every system",
+   "items": [
+    [
+     "Customer places an order",
+     "Store sends an event"
+    ],
+    [
+     "CRM updates the record",
+     "History in one place"
+    ],
+    [
+     "Invoice and label created",
+     "No retyping, no gaps"
+    ]
+   ],
+   "vo": "With an API integration, one new order updates the CRM, creates the invoice and books the shipping, automatically."
+  },
+  {
+   "type": "code",
+   "title": "What it looks like behind the scenes",
+   "file": "webhooks/order.js",
+   "type_time": 3.0,
+   "keywords": [
+    "app.post(",
+    "async",
+    "await",
+    "const",
+    "res.sendStatus("
+   ],
+   "lines": [
+    "// New order: update every system",
+    "app.post('/webhooks/order', async (req, res) => {",
+    "  const order = req.body;",
+    "  await crm.saveCustomer(order.customer);",
+    "  await accounting.createInvoice(order);",
+    "  await shipping.createLabel(order);",
+    "  res.sendStatus(200);",
+    "});"
+   ],
+   "caption": "Illustrative code. Built around your own tools and rules.",
+   "vo": "Behind the scenes it's clean, tested code, built around your own tools and rules."
+  },
+  {
+   "type": "list",
+   "title": "Where to start",
+   "good": true,
+   "numbered": true,
+   "items": [
+    [
+     "The task you retype most",
+     "Orders, leads or invoices"
+    ],
+    [
+     "The data that must match",
+     "Stock, prices, customers"
+    ],
+    [
+     "The step that slows replies",
+     "Status updates, follow-ups"
+    ]
+   ],
+   "vo": "Start with the task you retype most, the data that must always match, and the step that slows your replies."
+  },
+  {
+   "type": "cta",
+   "kicker": "Tired of copy-paste between apps?",
+   "lines": [
+    "Let's connect",
+    "your systems."
+   ],
+   "sub": "API integrations for stores, CRMs, accounting and custom apps.",
+   "button": "Map it out on WhatsApp",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "Tired of copy and paste between apps? Map it out with SK Developer on WhatsApp, and let's connect your systems."
+  }
+ ]
+}
