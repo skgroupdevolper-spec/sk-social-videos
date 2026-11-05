@@ -8,8 +8,8 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta, wording: "Tired of copy-paste between apps? Let's connect your systems." / button "Map it out on WhatsApp" + +92 325 2314412 + wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | ⏳ | filled in after scheduling |
-| Published | ⏳ all 4 platforms | ✅ only when Metricool shows PUBLISHED with a public URL |
+| Uploaded / scheduled | ✅ all 4, autoPublish true, video uploaded to Metricool | tiktok: id 417574376 / uuid 2197656701722315547 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2197656701722315547) · youtube: id 417574396 / uuid 2920582877492432471 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2920582877492432471) · facebook: id 417574414 / uuid -1980012037191220779 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-1980012037191220779) · instagram: id 417574434 / uuid 7270355063430333336 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=7270355063430333336) (2026-11-05 06:00 America/Los_Angeles) |
+| Published | ⏳ all 4 platforms (scheduled 2026-11-05 06:00 America/Los_Angeles) | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ## Concept
 - Pillar / audience / angle: APIs & integrations (custom development) · small and mid-size businesses and eCommerce brands running a store, CRM, accounting and shipping tools side by side · "the link between your tools is a person" → one order event updates every system → where to start.

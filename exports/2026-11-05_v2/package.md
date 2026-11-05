@@ -8,8 +8,8 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: endscreen, wording: "AI chatbots, automation and custom web apps" / green button "Build your AI assistant on WhatsApp" + +92 325 2314412 + wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | ⏳ | filled in after scheduling |
-| Published | ⏳ all 4 platforms | ✅ only when Metricool shows PUBLISHED with a public URL |
+| Uploaded / scheduled | ✅ all 4, autoPublish true, video uploaded to Metricool | tiktok: id 417574765 / uuid 381528548225337160 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=381528548225337160) · youtube: id 417574783 / uuid 1829843872871104532 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=1829843872871104532) · facebook: id 417574799 / uuid -3287362734076507964 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-3287362734076507964) · instagram: id 417574823 / uuid 942909571811264394 / [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=942909571811264394) (2026-11-05 12:00 America/Los_Angeles) |
+| Published | ⏳ all 4 platforms (scheduled 2026-11-05 12:00 America/Los_Angeles) | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ## Concept
 - Pillar / audience / angle: AI chatbots & automation (custom development) · online stores, service businesses, clinics and any business answering the same customer questions all day · concept chat with grounded answer + human handoff → generic vs custom → what a good assistant won't do → how we build it.
