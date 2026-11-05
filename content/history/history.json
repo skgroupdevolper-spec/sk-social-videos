@@ -511,12 +511,12 @@
    "audience": "online stores, service businesses, clinics — anyone answering repeat customer questions",
    "main_benefit": "customers get grounded answers any hour; people take over when needed, with the chat attached",
    "theme": "graphite",
-   "design": "graphite theme: kinetic + AI chat (Concept demo) + generic vs custom compare + won't-do list (red ✕) + build steps + WhatsApp endscreen",
+   "design": "graphite theme, layout glass/bar-captions/top-progress: kinetic + illustrated developer typing + AI chat (Concept demo) + compare + icon steps + WhatsApp endscreen; voiceover + subtitles",
    "scenes": [
     "kinetic",
+    "character",
     "chat",
     "compare",
-    "list",
     "steps",
     "endscreen"
    ],
@@ -525,10 +525,10 @@
     "seed": 4682
    },
    "cta": "Build your AI assistant on WhatsApp (endscreen) / AI chatbots, automation and custom web apps",
-   "duration_s": 34.2,
+   "duration_s": 32.3,
    "scheduled_for": "2026-11-05T12:00:00-08:00",
    "date": "2026-11-05",
-   "voiceover": "none (TTS still unavailable in sandbox; script in spec vo fields)",
+   "voiceover": "Piper en_US-libritts_r-medium speaker 8, speed 1.05 (offline); burned-in subtitles",
    "status": "scheduled",
    "platform_status": {
     "tiktok": "PENDING",
@@ -558,7 +558,13 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=942909571811264394"
     }
    },
-   "status_checked": "2026-11-05T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool)"
+   "status_checked": "2026-11-05T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool)",
+   "layout": {
+    "cards": "glass",
+    "captions": "bar",
+    "progress": "top"
+   },
+   "note": "Re-rendered 2026-11-05 ~10:30 PT with voice, subtitles, icons and illustrated character at owner's request; Metricool media updated before the 12:00 slot."
   }
  ],
  "notes": [

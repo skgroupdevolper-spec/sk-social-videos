@@ -11,6 +11,8 @@ See topics.md for the spec format and the content plan.
 import sys, os, json, math, subprocess, tempfile, shutil
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import art
 
 W, H, FPS = 1080, 1920, 30
 MIN_TOTAL = 32.0
@@ -79,6 +81,24 @@ def wrap(text, f, maxw):
     if cur: lines.append(cur)
     return lines
 
+VO_LEAD = 0.3   # seconds of silence before each scene's voiceover starts
+
+def caption_chunks(text, dur, lead):
+    """Split voiceover text into short subtitle chunks, timed by character count across the voice length."""
+    words = text.replace("—", ",").split()
+    chunks, cur = [], []
+    for w in words:
+        cur.append(w)
+        if len(cur) >= 5 or len(" ".join(cur)) > 26 or w[-1] in ".,?!:;":
+            chunks.append(" ".join(cur)); cur = []
+    if cur: chunks.append(" ".join(cur))
+    tot = sum(len(c) + 3 for c in chunks) or 1
+    out, t0 = [], lead
+    for c in chunks:
+        d = dur * (len(c) + 3) / tot
+        out.append((t0, t0 + d, c.rstrip(",;:"))); t0 += d
+    return out
+
 def fit_size(lines, k, maxw, maxs, mins=40):
     s = maxs
     while s > mins and max(tw(l, font(k, s)) for l in lines) > maxw: s -= 4
@@ -93,15 +113,32 @@ class R:
         th["bg_c"] = hexc(th["bg"][0])
         self.th = th
         self.brand = spec.get("brand", {})
+        self.lay = spec.get("layout", {})
+        if self.lay.get("align"): th["align"] = self.lay["align"]
         self.left = th["align"] == "left"
         self.X = 90 if self.left else None
         self.base = self.make_base()
         self.blobs = [self.make_blob(hexc(c), r) for c, r in zip(th["glow"], (380, 300))] if th["glow"] else []
         self.light = sum(hexc(th["bg"][0])) > 600
         self.scenes = spec["scenes"]
+        self.vo, self.vsr, self.caps = [None] * len(self.scenes), 22050, [[] for _ in self.scenes]
+        vc = spec.get("voice")
+        if vc:
+            sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "voice"))
+            import tts
+            v = tts.Voice(); self.vsr = v.sr
+            for i, sc in enumerate(self.scenes):
+                if sc.get("vo"):
+                    self.vo[i] = v.say(sc["vo"], int(vc.get("speaker", 0)), float(vc.get("speed", 1.0)))
+                    self.caps[i] = caption_chunks(sc["vo"], len(self.vo[i]) / self.vsr, VO_LEAD if i else 0.15)
         self.durs = [self.scene_dur(s) for s in self.scenes]
+        if vc:
+            for i, a in enumerate(self.vo):
+                if a is not None:
+                    self.durs[i] = max(2.4, len(a) / self.vsr + (VO_LEAD if i else 0.15) + float(self.scenes[i].get("tail", .45)))
+            if sum(self.durs) < 25: self.durs[-1] += 25 - sum(self.durs)
         tot = sum(self.durs)
-        if tot < MIN_TOTAL:
+        if tot < MIN_TOTAL and not vc:
             k = MIN_TOTAL / tot
             self.durs = [d * k for d in self.durs]
         self.total = sum(self.durs)
@@ -116,7 +153,9 @@ class R:
                 "code": 2.6 + s.get("type_time", 3.2) + (1.2 if s.get("caption") else 0),
                 "browser": 2.4 + .45 * len(s.get("callouts", [])),
                 "endscreen": 4.2, "chat": 1.8 + .9 * len(s.get("messages", [])) + (1.0 if s.get("caption") else 0),
-                "dashboard": 2.6 + .45 * len(s.get("callouts", []))}.get(t, 4.5)
+                "dashboard": 2.6 + .45 * len(s.get("callouts", [])),
+                "character": 5.0, "search": 3.0 + .06 * len(s.get("query", "")) + .5 * len(s.get("results", [])),
+                "icons": 2.4 + .35 * len(s.get("items", []))}.get(t, 4.5)
         return float(s.get("dur", base))
 
     def make_base(self):
@@ -201,6 +240,16 @@ class R:
 
     def card(self, d, x0, y0, x1, y1, a, active=False):
         th = self.th
+        st = self.lay.get("cards", "solid")
+        if st == "outline":
+            d.rounded_rectangle([x0, y0, x1, y1], radius=th["radius"], outline=A(th["accent"] if active else th["muted"], a), width=4 if active else 3)
+            return
+        if st == "glass":
+            d.rounded_rectangle([x0 + 10, y0 + 14, x1 + 10, y1 + 14], radius=th["radius"], fill=A((0, 0, 0), .10 * a))
+            d.rounded_rectangle([x0, y0, x1, y1], radius=th["radius"], fill=A(th["card"], .92 * a),
+                                outline=A(th["accent"] if active else th["border"], a), width=4 if active else 2)
+            d.rounded_rectangle([x0, y0, x0 + 14, y1], radius=7, fill=A(th["accent"], a))
+            return
         d.rounded_rectangle([x0, y0, x1, y1], radius=th["radius"], fill=A(th["card"], a),
                             outline=A(th["accent"] if active else th["border"], a), width=4 if active else 2)
 
@@ -252,7 +301,7 @@ class R:
         d.text((x + 116, y + 58), self.brand.get("role", "Full-Stack Software Development"), font=font("med", 28), fill=A(th["muted"], k))
 
     def progress(self, d, gt):
-        th = self.th; y = H - 90
+        th = self.th; y = 52 if self.lay.get("progress") == "top" else H - 90
         d.rounded_rectangle([70, y, W - 70, y + 8], radius=4, fill=A(th["border"], 1))
         d.rounded_rectangle([70, y, 70 + (W - 140) * clamp(gt / self.total), y + 8], radius=4, fill=A(th["accent"], 1))
 
@@ -329,7 +378,11 @@ class R:
             if kk <= 0: continue
             yy = y0s + i * (ch + gap) + 40 * (1 - kk)
             self.card(d, 90, yy, W - SAFE_R, yy + ch, kk)
-            if numbered: self.badge(d, 180, yy + ch / 2, 44, str(i + 1), kk)
+            ic = it[2] if isinstance(it, list) and len(it) > 2 else None
+            if ic:
+                d.ellipse([180 - 50, yy + ch / 2 - 50, 180 + 50, yy + ch / 2 + 50], fill=A(th["accent"], kk))
+                art.icon(d, ic, 180, yy + ch / 2, 54, (255, 255, 255) if sum(th["accent"]) < 520 else (12, 12, 20), kk)
+            elif numbered: self.badge(d, 180, yy + ch / 2, 44, str(i + 1), kk)
             else: self.check(d, 180, yy + ch / 2, 44, kk, ease((t - st - .15) / .4), good)
             ff = font("bold", 50)
             if b_:
@@ -349,11 +402,16 @@ class R:
         d.rounded_rectangle([x - 4, y0, x + 4, y0 + step * (len(items) - 1) * kl], radius=4, fill=A(th["border"], 1))
         for i, it in enumerate(items):
             a_, b_ = (it + [""])[:2]
+            ic = it[2] if len(it) > 2 else None
             st = .5 + i * .6
             kk = back((t - st) / .5); yy = y0 + i * step
             if kk > .02:
                 last = i == len(items) - 1
-                self.badge(d, x, yy, 68 * kk, str(i + 1), 1, col=th["accent2"] if last else th["accent"])
+                col = th["accent2"] if last else th["accent"]
+                if ic:
+                    d.ellipse([x - 68 * kk, yy - 68 * kk, x + 68 * kk, yy + 68 * kk], fill=A(col, 1))
+                    art.icon(d, ic, x, yy, 70 * kk, (255, 255, 255) if sum(col) < 520 else (12, 12, 20), 1)
+                else: self.badge(d, x, yy, 68 * kk, str(i + 1), 1, col=col)
             k2 = ease((t - st - .1) / .5)
             if k2 > 0:
                 d.text((320 + 40 * (1 - k2), yy - 62), a_, font=font("bold", 52), fill=A(th["text"], k2))
@@ -366,14 +424,19 @@ class R:
         if s.get("sub"): y = self.block(d, t, .2, y + 10, s["sub"], "med", 42, th["muted"])
         f = font("semi", 46)
         rows, cur, curw = [], [], 0
+        icons = {}
+        items = []
         for it in s["items"]:
-            w = tw(it, f) + 80
+            if isinstance(it, list): icons[it[0]] = it[1]; it = it[0]
+            items.append(it)
+        for it in items:
+            w = tw(it, f) + 80 + (62 if it in icons else 0)
             if cur and curw + w + 28 > W - 160: rows.append(cur); cur, curw = [], 0
             cur.append(it); curw += w + 28
         if cur: rows.append(cur)
         idx = 0; cols = [th["accent"], th["accent2"], th["text"]]
         for r, row in enumerate(rows):
-            widths = [tw(x, f) + 80 for x in row]
+            widths = [tw(x, f) + 80 + (62 if x in icons else 0) for x in row]
             total = sum(widths) + 28 * (len(row) - 1)
             x = 90 if self.left else (W - total) / 2
             cy = y + 110 + r * 140
@@ -384,7 +447,9 @@ class R:
                     d.rounded_rectangle([xc - cw / 2, cy - chh / 2, xc + cw / 2, cy + chh / 2], radius=chh / 2,
                                         fill=A(th["card"], 1), outline=A(cols[idx % 3], 1), width=4)
                     ff = font("semi", 46 * kk); bb = d.textbbox((0, 0), it, font=ff)
-                    d.text((xc - (bb[2] - bb[0]) / 2 - bb[0], cy - (bb[3] - bb[1]) / 2 - bb[1]), it, font=ff, fill=A(th["text"], 1))
+                    off = 31 * kk if it in icons else 0
+                    if it in icons: art.icon(d, icons[it], xc - cw / 2 + 52 * kk, cy, 44 * kk, cols[idx % 3], 1)
+                    d.text((xc - (bb[2] - bb[0]) / 2 - bb[0] + off, cy - (bb[3] - bb[1]) / 2 - bb[1]), it, font=ff, fill=A(th["text"], 1))
                 x += w + 28; idx += 1
 
     def s_compare(self, d, t, s):
@@ -703,6 +768,122 @@ class R:
             self.check(d, 130, yy + 30, 28, kk, ease((t - 1.75 - i * .45) / .35), True)
             d.text((180 + 30 * (1 - kk), yy + 8), c, font=font("semi", 44), fill=A(th["text"], kk))
 
+    # ---- captions (burned-in subtitles of the voiceover)
+    def captions(self, d, i, t):
+        sc = self.scenes[i]
+        if not self.caps[i] or sc.get("captions") is False or (sc["type"] in ("cta", "endscreen") and not sc.get("captions")):
+            return
+        th = self.th; style = self.lay.get("captions", "box")
+        for (a, b, txt) in self.caps[i]:
+            if a <= t < b + .05:
+                k = ease((t - a) / .12)
+                f = font("xb", 54)
+                lines = wrap(txt, f, W - 300)[:2]
+                y = 1440 - (len(lines) - 1) * 42
+                for j, l in enumerate(lines):
+                    w = tw(l, f); x = (W - SAFE_R + 40 - w) / 2; yy = y + j * 84
+                    if style == "box":
+                        d.rounded_rectangle([x - 26, yy - 10, x + w + 26, yy + 66], radius=18, fill=A((10, 10, 12), .82 * k))
+                        d.text((x, yy), l, font=f, fill=A((255, 255, 255), k))
+                    elif style == "bar":
+                        d.rounded_rectangle([x - 26, yy - 10, x + w + 26, yy + 66], radius=8, fill=A(th["accent"], .95 * k))
+                        fg = (255, 255, 255) if sum(th["accent"]) < 520 else (12, 12, 20)
+                        d.text((x, yy), l, font=f, fill=A(fg, k))
+                    else:
+                        for ox, oy in ((-3, 0), (3, 0), (0, -3), (0, 3), (-2, -2), (2, 2), (2, -2), (-2, 2)):
+                            d.text((x + ox, yy + oy), l, font=f, fill=A((0, 0, 0), k))
+                        d.text((x, yy), l, font=f, fill=A((255, 214, 0) if j == 0 else (255, 255, 255), k))
+                return
+
+    # ---- new visual scenes: illustrated character, search typing, icon grid
+    def s_character(self, d, t, s):
+        th = self.th
+        y = self.headline(d, t, 0, 300, wrap(s.get("title", ""), font(th["head"], 76), W - 220), tuple(s.get("accent", [])), maxs=76) if s.get("title") else 300
+        # typed bubble / editor card
+        lines = s.get("typed", [])
+        if lines:
+            k = ease((t - .3) / .5)
+            x0, y0, x1 = 110, y + 40, W - SAFE_R - 20
+            h = 70 + 62 * len(lines)
+            self.card(d, x0, y0 + 30 * (1 - k), x1, y0 + h + 30 * (1 - k), k, active=True)
+            total = sum(len(l) for l in lines)
+            n = int(total * clamp((t - .7) / max(1.0, s.get("type_time", 2.2))))
+            yy = y0 + 36; fT = font("semi", 46); cur = None
+            for l in lines:
+                show = l[:max(0, n)]
+                if cur is None and len(show) < len(l): cur = (x0 + 44 + tw(show, fT), yy)
+                n -= len(l)
+                d.text((x0 + 40, yy), show, font=fT, fill=A(th["text"], k))
+                yy += 62
+            if cur is None: cur = (x0 + 44 + tw(lines[-1], fT), yy - 62)
+            if int(t * 2.5) % 2 == 0: d.rectangle([cur[0], cur[1] + 4, cur[0] + 6, cur[1] + 52], fill=A(th["accent"], k))
+            y = y0 + h + 30
+        kc = back((t - .1) / .7)
+        sc = s.get("scale", 1.2) * max(.01, kc)
+        base_y = min(1330, y + 470 * s.get("scale", 1.2))
+        if kc > .02:
+            art.character(d, W / 2 - 40, base_y, sc, t, th, skin=s.get("skin", 1), typing=s.get("pose", "typing") == "typing",
+                          shirt=hexc(s["shirt"]) if s.get("shirt") else None, wave=s.get("pose") == "wave")
+        for j, (ic, ang) in enumerate(zip(s.get("icons", []), (-165, -15, 15, 165))):
+            kk = back((t - .8 - j * .25) / .5)
+            if kk <= .02: continue
+            r = 420 * s.get("scale", 1.2) * .75
+            cx = W / 2 - 40 + math.cos(math.radians(ang)) * r * 1.15
+            cy = base_y - 330 * s.get("scale", 1.2) + math.sin(math.radians(ang)) * r * .55 + math.sin(t * 2 + j) * 10
+            cx = min(cx, W - SAFE_R - 70)
+            rr = 62 * kk
+            d.ellipse([cx - rr, cy - rr, cx + rr, cy + rr], fill=A(th["card"], 1), outline=A(th["accent"], 1), width=4)
+            art.icon(d, ic, cx, cy, 64 * kk, th["accent"], 1)
+
+    def s_search(self, d, t, s):
+        th = self.th
+        y = self.headline(d, t, 0, 320, wrap(s.get("title", ""), font(th["head"], 76), W - 220), tuple(s.get("accent", [])), maxs=76)
+        k = ease((t - .2) / .5)
+        x0, x1, y0 = 100, W - SAFE_R, y + 60
+        d.rounded_rectangle([x0, y0, x1, y0 + 130], radius=65, fill=A(th["card"], k), outline=A(th["accent"], k), width=4)
+        art.icon(d, "search", x0 + 75, y0 + 65, 54, th["accent"], k)
+        q = s.get("query", "")
+        n = int(len(q) * clamp((t - .6) / max(.8, .06 * len(q))))
+        f = font("semi", 48); shown = q[:n]
+        while tw(shown, f) > x1 - x0 - 200 and len(shown) > 3: shown = shown[1:]
+        d.text((x0 + 140, y0 + 36), shown, font=f, fill=A(th["text"], k))
+        if int(t * 2.5) % 2 == 0 and k > .5:
+            cx = x0 + 146 + tw(shown, f); d.rectangle([cx, y0 + 38, cx + 6, y0 + 94], fill=A(th["accent"], 1))
+        if s.get("label"): self.pill(d, x1 - tw(s["label"], font("semi", 24)) - 68, y0 + 170, s["label"], font("semi", 24), th["muted"], th["bg_c"], k, h=44)
+        t0 = .6 + .06 * len(q) + .3
+        yy = y0 + 230
+        for i, it in enumerate(s.get("results", [])[:4]):
+            title, sub, ic = (it + ["", "globe"])[:3]
+            kk = ease((t - t0 - i * .4) / .45)
+            if kk <= 0: continue
+            hh = 170
+            self.card(d, x0, yy + 30 * (1 - kk), x1, yy + hh + 30 * (1 - kk), kk, active=i == s.get("highlight", -1))
+            cy = yy + hh / 2 + 30 * (1 - kk)
+            d.rounded_rectangle([x0 + 30, cy - 50, x0 + 130, cy + 50], radius=24, fill=A(th["accent"], kk))
+            art.icon(d, ic, x0 + 80, cy, 54, (255, 255, 255) if sum(th["accent"]) < 520 else (12, 12, 20), kk)
+            d.text((x0 + 160, cy - 52), wrap(title, font("bold", 44), x1 - x0 - 200)[0], font=font("bold", 44), fill=A(th["text"], kk))
+            d.text((x0 + 160, cy + 6), wrap(sub, font("reg", 34), x1 - x0 - 200)[0], font=font("reg", 34), fill=A(th["muted"], kk))
+            yy += hh + 26
+
+    def s_icons(self, d, t, s):
+        th = self.th
+        y = self.headline(d, t, 0, 360, wrap(s.get("title", ""), font(th["head"], 80), W - 220), tuple(s.get("accent", [])), maxs=80)
+        if s.get("sub"): y = self.block(d, t, .2, y + 10, s["sub"], "med", 42, th["muted"])
+        items = s.get("items", [])[:6]; cols = 2 if len(items) <= 4 else 3
+        gw = (W - 90 - SAFE_R - 30 * (cols - 1)) / cols; gh = 250
+        for i, (ic, lab) in enumerate(items):
+            r_, c_ = divmod(i, cols)
+            kk = back((t - .4 - i * .22) / .45)
+            if kk <= .02: continue
+            x0 = 90 + c_ * (gw + 30); y0 = y + 60 + r_ * (gh + 30)
+            cx, cy = x0 + gw / 2, y0 + gh / 2
+            ww, hh = gw * kk, gh * kk
+            self.card(d, cx - ww / 2, cy - hh / 2, cx + ww / 2, cy + hh / 2, 1, active=i == 0)
+            art.icon(d, ic, cx, cy - 40 * kk, 80 * kk, th["accent"], 1)
+            ff = font("semi", (40 if cols == 2 else 34) * kk)
+            for j, l in enumerate(wrap(lab, ff, gw - 30)[:2]):
+                self.txt(d, cx - tw(l, ff) / 2, cy + 30 * kk + j * 44 * kk, l, ff, th["text"], 1)
+
     # ---- frame
     def frame(self, i, t):
         s = self.scenes[i]; dur = self.durs[i]
@@ -719,6 +900,7 @@ class R:
         img.alpha_composite(L)
         H2 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d2 = ImageDraw.Draw(H2)
         self.header(d2, gt); self.progress(d2, gt)
+        self.captions(d2, i, t)
         img.alpha_composite(H2)
         rgb = img.convert("RGB")
         blk = (255, 255, 255) if self.light else (0, 0, 0)
@@ -861,6 +1043,25 @@ def music(path, dur, mood="corporate", seed=1):
     mix = np.tanh(mix * 1.2); mix /= np.abs(mix).max(); mix *= .7
     wavfile.write(path, SR, (mix * 32767).astype(np.int16))
 
+def mix_voice(r, path):
+    """Lay the per-scene voiceover over the music and duck the music under the voice."""
+    from scipy.io import wavfile
+    from scipy.signal import resample_poly
+    sr, mus = wavfile.read(path); mus = mus.astype(np.float32) / 32767
+    if mus.ndim == 1: mus = mus[:, None]
+    vo = np.zeros(len(mus), np.float32)
+    for i, a in enumerate(r.vo):
+        if a is None: continue
+        a = resample_poly(a, sr, r.vsr).astype(np.float32)
+        st = int((r.starts[i] + (VO_LEAD if i else 0.15)) * sr)
+        e = min(len(vo), st + len(a)); vo[st:e] += a[:e - st]
+    env = (np.abs(vo) > .02).astype(np.float32)
+    k = int(sr * .25); env = np.convolve(env, np.ones(k) / k, mode="same").clip(0, 1)
+    duck = 1 - .72 * env
+    out = mus * duck[:, None] * .55 + vo[:, None] * .95
+    out /= max(1e-6, np.abs(out).max()); out *= .92
+    wavfile.write(path, sr, (out * 32767).astype(np.int16))
+
 # ------------------------------------------------------------------ main
 def render(spec, out):
     r = R(spec)
@@ -883,6 +1084,7 @@ def render(spec, out):
                     f"{work}/v.mp4"], check=True)
     m = spec.get("music", {})
     music(f"{work}/m.wav", r.total, m.get("mood", "corporate"), int(m.get("seed", 1)))
+    if any(a is not None for a in r.vo): mix_voice(r, f"{work}/m.wav")
     tmp_out = out[:-4] + ".tmp.mp4"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{work}/v.mp4", "-i", f"{work}/m.wav", "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-af", "loudnorm=I=-16:TP=-1.5", "-shortest",

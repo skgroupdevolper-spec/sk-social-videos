@@ -3,8 +3,8 @@
 ## Production status
 | Step | Status | Evidence |
 |---|---|---|
-| Video created | ✅ | exports/2026-11-05_v2/video.mp4 · 34.2 s · 1080×1920 · 30 fps · audio yes (music only) |
-| English voiceover | ❌ | Not rendered — still no text-to-speech engine installable in the sandbox (pip index blocked). Script in spec.json `vo` fields and below. |
+| Video created | ✅ | exports/2026-11-05_v2/video.mp4 · 32.3 s · 1080×1920 · 30 fps · audio yes (English voiceover + music, burned-in subtitles) — re-rendered 2026-11-05 ~10:30 PT at the owner's request; the silent first version was replaced before publishing |
+| English voiceover | ✅ | Offline Piper voice en_US-libritts_r-medium, speaker 8 (male), speed 1.05; subtitles burned in (orange bar style) |
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: endscreen, wording: "AI chatbots, automation and custom web apps" / green button "Build your AI assistant on WhatsApp" + +92 325 2314412 + wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
@@ -13,16 +13,16 @@
 
 ## Concept
 - Pillar / audience / angle: AI chatbots & automation (custom development) · online stores, service businesses, clinics and any business answering the same customer questions all day · concept chat with grounded answer + human handoff → generic vs custom → what a good assistant won't do → how we build it.
-- Design system & theme: graphite (charcoal, dot motif, centred, scale-in) — kinetic → AI chat (Concept demo) → compare → "won't do" list (red ✕) → build steps → branded WhatsApp end screen · music mood house, seed 4682.
+- Design system & theme: graphite (charcoal, dot motif, centred) with today's layout variant: glass cards, orange subtitle bar, progress bar at top — kinetic → illustrated developer typing (cartoon, not a real person) → AI chat (Concept demo) → compare → build steps with icons → branded WhatsApp end screen · music mood house, seed 4682, ducked under the voice.
 - Script table:
-  | Time | Scene | On-screen text | Voiceover script (for when TTS is available) |
+  | Time | Scene | On-screen text | Voiceover |
   |---|---|---|---|
-  | 0–6.2 s | kinetic | Same questions. Every day. Even at **2 a.m.** · What if your website could answer them? | Same questions. Every day. Even at 2 a.m. What if your website could answer them for you? |
-  | 6.2–12.6 s | chat (Concept demo) | An AI assistant that knows your business · "Has my order shipped yet?" → "Yes, it left today. Tracking is in your email." · "Can I speak to someone?" → "Of course. Connecting you to our team, with this chat attached." · Answers from your own content. A person when it matters. | An AI assistant that answers from your own content and systems, and hands the chat to your team when a person is needed. |
-  | 12.6–19.0 s | compare | Generic bot vs custom assistant · Generic: vague, scripted replies / can't see your orders / dead ends · Custom: trained on your content / sees your orders / hands over to staff | A generic bot gives vague replies and can't see your data. A custom assistant is trained on your content, connected to your systems, and knows when to hand over. |
-  | 19.0–24.4 s | list (✕) | What a good assistant won't do · Guess when it doesn't know / Hide the human option / Share private data | A good assistant doesn't guess, doesn't hide the human option, and never shares data it shouldn't. |
-  | 24.4–30.0 s | steps | How we build yours · Gather your knowledge / Connect your systems / Test with real questions | We gather your knowledge, connect your systems, and test with real customer questions before launch. |
-  | 30.0–34.2 s | endscreen | SK Developer · AI chatbots, automation and custom web apps · BUILD YOUR AI ASSISTANT ON WHATSAPP · +92 325 2314412 · wa.me/923252314412 | Want an assistant that knows your business? Build it with SK Developer. Message us on WhatsApp. |
+  | 0–3.6 s | kinetic | Same questions. Every day. Even at **2 a.m.** | Same questions. Every day. Even at two a.m. |
+  | 3.6–7.7 s | character (illustration) | Your team can't reply around the clock · typed: "Has my order shipped?" / "Are you open on Sunday?" · chat, clock, mail icons | Your team can't sit at the keyboard all night, answering the same messages by hand. |
+  | 7.7–14.3 s | chat (Concept demo) | "Has my order shipped yet?" → "Yes, it left today. Tracking is in your email." · "Can I speak to someone?" → "Of course. Connecting you to our team, with this chat attached." | A custom AI assistant answers from your own content and systems, and hands the chat to your team when a person is needed. |
+  | 14.3–20.9 s | compare | Generic bot vs custom assistant | Generic bots give vague answers. Yours is trained on your content, connected to your orders, and knows when to hand over. |
+  | 20.9–26.5 s | steps (icons) | How we build yours · Gather your knowledge / Connect your systems / Test, then launch | We gather your knowledge, connect your systems, and test with real customer questions before launch. |
+  | 26.5–32.3 s | endscreen | SK Developer · AI chatbots, automation and custom web apps · BUILD YOUR AI ASSISTANT ON WHATSAPP · +92 325 2314412 · wa.me/923252314412 | Want an assistant that knows your business? Message SK Developer on WhatsApp. |
 - Cover: `thumbnail.jpg` (kinetic frame) — "Same questions. Every day. Even at 2 a.m."
 - Chat is labelled "Concept demo". No statistics, clients or results claimed.
 
