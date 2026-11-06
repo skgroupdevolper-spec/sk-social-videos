@@ -7,7 +7,7 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: endscreen. Tagline "Custom web apps built around how you work", button "Talk build vs buy on WhatsApp", +92 325 2314412, wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | content/profile-setup.md (all items still ⏳) |
-| Uploaded / scheduled | see table at the end | Metricool, 12:00 America/Los_Angeles |
+| Uploaded / scheduled | ✅ all 4 scheduled (see table at the end); risk: Metricool account limit made 6 of 8 posts fail on 11-05 | Metricool, 12:00 America/Los_Angeles |
 | Published | ⏳ | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ## Concept
@@ -95,7 +95,9 @@ Primary: **custom software vs saas**. Secondary: build vs buy software · when t
 ## Metricool posts
 | Platform | Status | Post id | uuid | Planner |
 |---|---|---|---|---|
-| TikTok | pending | | | |
-| YouTube | pending | | | |
-| Facebook | pending | | | |
-| Instagram | pending | | | |
+| TikTok | ✅ scheduled 12:00 PT, autoPublish (status PENDING) | 418769214 | 3484621079199105230 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=3484621079199105230) |
+| YouTube | ✅ scheduled 12:00 PT, autoPublish (status PENDING) | 418769235 | -1867998742763647339 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-1867998742763647339) |
+| Facebook | ✅ scheduled 12:00 PT, autoPublish (status PENDING) | 418769259 | 7775146436682597176 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=7775146436682597176) |
+| Instagram | ✅ scheduled 12:00 PT, autoPublish (status PENDING) | 418769293 | -5826142047610844562 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-5826142047610844562) |
+
+> ⚠️ On 2026-11-05, 6 of 8 Metricool posts failed at publish time with "You have reached your Metricool account limit." Unless the plan or quota is changed, these posts may fail too.

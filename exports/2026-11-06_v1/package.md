@@ -7,7 +7,7 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta. Kicker "Still between the two?", headline "Pick the platform that fits your store.", button "Ask which one fits", +92 325 2314412, wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | content/profile-setup.md (all items still ⏳) |
-| Uploaded / scheduled | see table at the end | Metricool, 06:00 America/Los_Angeles |
+| Uploaded / scheduled | ✅ all 4 scheduled (see table at the end); risk: Metricool account limit made 6 of 8 posts fail on 11-05 | Metricool, 06:00 America/Los_Angeles |
 | Published | ⏳ | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ## Concept
@@ -95,7 +95,9 @@ Primary: **shopify vs woocommerce**. Secondary: woocommerce vs shopify for small
 ## Metricool posts
 | Platform | Status | Post id | uuid | Planner |
 |---|---|---|---|---|
-| TikTok | pending | | | |
-| YouTube | pending | | | |
-| Facebook | pending | | | |
-| Instagram | pending | | | |
+| TikTok | ✅ scheduled 06:00 PT, autoPublish (status PENDING) | 418768560 | -7046324775678688890 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-7046324775678688890) |
+| YouTube | ✅ scheduled 06:00 PT, autoPublish (status PENDING) | 418769152 | -6581209812571501850 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-6581209812571501850) |
+| Facebook | ✅ scheduled 06:00 PT, autoPublish (status PENDING) | 418769170 | 1544661819101430126 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=1544661819101430126) |
+| Instagram | ✅ scheduled 06:00 PT, autoPublish (status PENDING) | 418769182 | 8562592704213502334 | [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8562592704213502334) |
+
+> ⚠️ On 2026-11-05, 6 of 8 Metricool posts failed at publish time with "You have reached your Metricool account limit." Unless the plan or quota is changed, these posts may fail too.
