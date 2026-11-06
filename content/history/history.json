@@ -462,12 +462,12 @@
    "scheduled_for": "2026-11-05T06:00:00-08:00",
    "date": "2026-11-05",
    "voiceover": "none (TTS still unavailable in sandbox; script in spec vo fields)",
-   "status": "scheduled",
+   "status": "partially published (TikTok, Facebook); YouTube + Instagram failed",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "PUBLISHED",
+    "youtube": "ERROR (Metricool: account limit reached)",
+    "facebook": "PUBLISHED",
+    "instagram": "ERROR (Metricool: account limit reached)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -491,7 +491,11 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=7270355063430333336"
     }
    },
-   "status_checked": "2026-11-05T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool)"
+   "status_checked": "2026-11-06T02:45-08:00 (Metricool getScheduledPosts)",
+   "public_urls": {
+    "tiktok": "https://www.tiktok.com/@siyalking149/video/7704688335280786708",
+    "facebook": "https://facebook.com/reel/1426157703009176"
+   }
   },
   {
    "id": "2026-11-05_v2",
@@ -529,12 +533,12 @@
    "scheduled_for": "2026-11-05T12:00:00-08:00",
    "date": "2026-11-05",
    "voiceover": "Piper en_US-libritts_r-medium speaker 8, speed 1.05 (offline); burned-in subtitles",
-   "status": "scheduled",
+   "status": "not published — all 4 Metricool posts failed (account limit)",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "youtube": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "facebook": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "instagram": "ERROR (Metricool: You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -558,13 +562,112 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=942909571811264394"
     }
    },
-   "status_checked": "2026-11-05T09:39-08:00 (updateScheduledPost: media replaced with voiced version, commit 699604b; ids changed, uuids same)",
+   "status_checked": "2026-11-06T02:45-08:00 (Metricool getScheduledPosts)",
    "layout": {
     "cards": "glass",
     "captions": "bar",
     "progress": "top"
    },
    "note": "Re-rendered 2026-11-05 ~09:40 PT with voice, subtitles, icons and illustrated character at owner's request; Metricool media updated before the 12:00 slot."
+  },
+  {
+   "id": "2026-11-06_v1",
+   "date": "2026-11-06",
+   "type": "authority",
+   "pillar": "eCommerce (Shopify + WooCommerce)",
+   "topic": "Shopify vs WooCommerce: three questions decide which fits your store",
+   "hook": "Shopify, or WooCommerce?",
+   "title": "Shopify vs WooCommerce: 3 Questions to Pick the Right Platform",
+   "primary_keyword": "shopify vs woocommerce",
+   "secondary_keywords": [
+    "woocommerce vs shopify for small business",
+    "shopify or woocommerce which should I choose",
+    "best ecommerce platform for small business",
+    "shopify developer",
+    "woocommerce developer"
+   ],
+   "audience": "business owners about to launch or move an online store",
+   "main_benefit": "an honest platform pick from 3 questions (launch speed, customisation, maintenance); we build on both",
+   "theme": "studio",
+   "layout": {
+    "cards": "solid",
+    "captions": "box",
+    "progress": "bottom",
+    "align": "center"
+   },
+   "design": "studio theme: kinetic + search typing (Concept demo) + 3x2 icon grid + numbered icon list + cta; female voice + box subtitles",
+   "scenes": [
+    "kinetic",
+    "search",
+    "icons",
+    "list",
+    "cta"
+   ],
+   "music": {
+    "mood": "upbeat",
+    "seed": 3917
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 14, speed 1.05; burned-in subtitles",
+   "cta": "Still between the two? Pick the platform that fits your store. / Ask which one fits (WhatsApp)",
+   "duration_s": 27.4,
+   "scheduled_for": "2026-11-06T06:00:00-08:00",
+   "status": "created",
+   "platform_status": {
+    "tiktok": "NOT SCHEDULED YET",
+    "youtube": "NOT SCHEDULED YET",
+    "facebook": "NOT SCHEDULED YET",
+    "instagram": "NOT SCHEDULED YET"
+   }
+  },
+  {
+   "id": "2026-11-06_v2",
+   "date": "2026-11-06",
+   "type": "capability",
+   "pillar": "Custom web applications",
+   "topic": "Build vs buy: when a custom web app beats another SaaS subscription (and how we build it)",
+   "hook": "Another subscription. Another workaround. Sound familiar?",
+   "title": "Custom Software vs SaaS: When Should You Build Your Own Web App?",
+   "primary_keyword": "custom software vs saas",
+   "secondary_keywords": [
+    "build vs buy software",
+    "when to build a custom web app",
+    "custom web application development",
+    "replace saas with custom software",
+    "custom web app for small business"
+   ],
+   "audience": "SMB owners, ops leads and founders juggling many SaaS tools and workarounds",
+   "main_benefit": "keep SaaS for commodity jobs; custom web app for the process that is your edge; discovery → first version → grow",
+   "theme": "ink",
+   "layout": {
+    "cards": "outline",
+    "captions": "outline",
+    "progress": "top",
+    "align": "left"
+   },
+   "design": "ink theme: hook + illustrated developer typing + compare + admin dashboard (Concept demo) + icon steps + WhatsApp endscreen; male voice + outline subtitles",
+   "scenes": [
+    "hook",
+    "character",
+    "compare",
+    "dashboard",
+    "steps",
+    "endscreen"
+   ],
+   "music": {
+    "mood": "corporate",
+    "seed": 6604
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 5, speed 1.05; burned-in subtitles",
+   "cta": "Talk build vs buy on WhatsApp (endscreen) / Custom web apps built around how you work",
+   "duration_s": 31.0,
+   "scheduled_for": "2026-11-06T12:00:00-08:00",
+   "status": "created",
+   "platform_status": {
+    "tiktok": "NOT SCHEDULED YET",
+    "youtube": "NOT SCHEDULED YET",
+    "facebook": "NOT SCHEDULED YET",
+    "instagram": "NOT SCHEDULED YET"
+   }
   }
  ],
  "notes": [
@@ -579,6 +682,10 @@
   {
    "date": "2026-11-05",
    "note": "Only 5 themes exist, so today's two videos cannot both avoid the last 4 videos' themes: v1 uses paper (unused so far), v2 uses graphite (last used 2026-11-03_v1, with a different music mood: house instead of lofi). Theme+music pairs paper+lofi and graphite+house are new."
+  },
+  {
+   "date": "2026-11-06",
+   "note": "2026-11-05 posts: 6 of 8 failed in Metricool with 'You have reached your Metricool account limit.' Themes: only studio was unused in the last 4 videos, so v2 reuses ink (last 11-04_v2 with chill; today corporate, a new pair). Moods: upbeat new vs last 4; corporate last used 11-04_v1."
   }
  ]
 }

@@ -1,0 +1,121 @@
+{
+ "id": "2026-11-06_v2",
+ "theme": "ink",
+ "music": {
+  "mood": "corporate",
+  "seed": 6604
+ },
+ "voice": {
+  "speaker": 5,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "outline",
+  "captions": "outline",
+  "progress": "top",
+  "align": "left"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "label": "Build vs buy",
+   "lines": [
+    "Another subscription.",
+    "Another workaround."
+   ],
+   "accent_line": "Sound familiar?",
+   "vo": "Another subscription. Another workaround."
+  },
+  {
+   "type": "character",
+   "title": "When your tools fight how you work",
+   "pose": "typing",
+   "skin": 2,
+   "scale": 1.1,
+   "shirt": "#FF6A1A",
+   "typed": [
+    "export.csv, copy, paste",
+    "fix it by hand. Again."
+   ],
+   "icons": [
+    "card",
+    "gear",
+    "clock"
+   ],
+   "vo": "If your team spends the week exporting, copying and patching apps together, the software is working against you."
+  },
+  {
+   "type": "compare",
+   "title": "Off-the-shelf or custom?",
+   "left": {
+    "label": "Off-the-shelf",
+    "items": [
+     "Built for everyone",
+     "Data in many apps",
+     "Wait for the roadmap"
+    ]
+   },
+   "right": {
+    "label": "Custom app",
+    "items": [
+     "Your exact workflow",
+     "One place for data",
+     "Changes when you need"
+    ]
+   },
+   "vo": "Keep subscriptions for standard jobs like accounting. Build custom where your process is your edge."
+  },
+  {
+   "type": "dashboard",
+   "kind": "admin",
+   "title": "One app shaped around your workflow",
+   "menu": [
+    "Overview",
+    "Jobs",
+    "Clients",
+    "Team"
+   ],
+   "label": "Concept demo",
+   "callouts": [
+    "Your steps, your rules",
+    "Connects to tools you keep"
+   ],
+   "vo": "A custom web app follows your steps and rules, and connects to the tools you keep."
+  },
+  {
+   "type": "steps",
+   "title": "How we build it",
+   "items": [
+    [
+     "Discovery",
+     "Map how you work today",
+     "search"
+    ],
+    [
+     "First version",
+     "Core features, real users",
+     "rocket"
+    ],
+    [
+     "Grow",
+     "Add what your team needs",
+     "chart"
+    ]
+   ],
+   "vo": "We start with discovery, launch a focused first version, then grow it with what your team really needs."
+  },
+  {
+   "type": "endscreen",
+   "tagline": "Custom web apps built around how you work",
+   "button": "Talk build vs buy on WhatsApp",
+   "tail": 1.2,
+   "vo": "Not sure whether to build or buy? Talk it through with SK Developer on WhatsApp."
+  }
+ ]
+}

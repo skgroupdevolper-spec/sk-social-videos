@@ -1,0 +1,134 @@
+{
+ "id": "2026-11-06_v1",
+ "theme": "studio",
+ "music": {
+  "mood": "upbeat",
+  "seed": 3917
+ },
+ "voice": {
+  "speaker": 14,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "solid",
+  "captions": "box",
+  "progress": "bottom",
+  "align": "center"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "kinetic",
+   "words": [
+    "Shopify",
+    "or",
+    "WooCommerce?"
+   ],
+   "accent": [
+    2
+   ],
+   "size": 128,
+   "step": 0.3,
+   "vo": "Shopify, or WooCommerce?"
+  },
+  {
+   "type": "search",
+   "title": "Everyone gives a different answer",
+   "query": "shopify vs woocommerce",
+   "label": "Concept demo",
+   "highlight": 2,
+   "results": [
+    [
+     "Shopify",
+     "Hosted, all-in-one",
+     "bag"
+    ],
+    [
+     "WooCommerce",
+     "Open source, on WordPress",
+     "wordpress"
+    ],
+    [
+     "Which one fits my store?",
+     "The question that matters",
+     "search"
+    ]
+   ],
+   "vo": "Search it, and everyone gives you a different answer. The better question is, which one fits your store?"
+  },
+  {
+   "type": "icons",
+   "title": "The honest difference",
+   "sub": "Shopify on top, WooCommerce below",
+   "items": [
+    [
+     "bag",
+     "Shopify"
+    ],
+    [
+     "rocket",
+     "Fast to launch"
+    ],
+    [
+     "star",
+     "Hosting included"
+    ],
+    [
+     "wordpress",
+     "WooCommerce"
+    ],
+    [
+     "code",
+     "Full control"
+    ],
+    [
+     "gear",
+     "More to maintain"
+    ]
+   ],
+   "vo": "Shopify is hosted and quick to launch. WooCommerce runs on WordPress, and gives you full control, with more to maintain."
+  },
+  {
+   "type": "list",
+   "title": "Three questions decide it",
+   "good": true,
+   "numbered": true,
+   "items": [
+    [
+     "How fast must you launch?",
+     "Speed points to Shopify",
+     "rocket"
+    ],
+    [
+     "How custom is your store?",
+     "Unusual needs suit WooCommerce",
+     "gear"
+    ],
+    [
+     "Who will maintain it?",
+     "Plan for updates either way",
+     "shield"
+    ]
+   ],
+   "vo": "Ask three things. How fast you need to launch. How custom your store is. And who will look after it."
+  },
+  {
+   "type": "cta",
+   "kicker": "Still between the two?",
+   "lines": [
+    "Pick the platform",
+    "that fits your store."
+   ],
+   "sub": "We build on both Shopify and WooCommerce.",
+   "button": "Ask which one fits",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "We build on both. Tell SK Developer about your store on WhatsApp, and get an honest recommendation."
+  }
+ ]
+}
