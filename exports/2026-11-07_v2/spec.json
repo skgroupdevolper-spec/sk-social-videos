@@ -1,0 +1,127 @@
+{
+ "id": "2026-11-07_v2",
+ "theme": "paper",
+ "music": {
+  "mood": "house",
+  "seed": 8843
+ },
+ "voice": {
+  "speaker": 18,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "solid",
+  "captions": "bar",
+  "progress": "top",
+  "align": "center"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "kinetic",
+   "words": [
+    "\"Where's",
+    "my",
+    "invoice?\""
+   ],
+   "accent": [
+    2
+   ],
+   "size": 130,
+   "step": 0.3,
+   "vo": "Where's my invoice? Any update on my order?"
+  },
+  {
+   "type": "icons",
+   "title": "Let customers help themselves",
+   "sub": "One secure login per client",
+   "items": [
+    [
+     "card",
+     "Invoices"
+    ],
+    [
+     "bag",
+     "Order status"
+    ],
+    [
+     "layout",
+     "Documents"
+    ],
+    [
+     "calendar",
+     "Bookings"
+    ],
+    [
+     "chat",
+     "Messages"
+    ],
+    [
+     "user",
+     "Account"
+    ]
+   ],
+   "vo": "A customer portal gives every client a secure login to see invoices, order status, documents and bookings, without emailing your team."
+  },
+  {
+   "type": "dashboard",
+   "kind": "admin",
+   "title": "Their account, in one place",
+   "menu": [
+    "My orders",
+    "Invoices",
+    "Documents",
+    "Support"
+   ],
+   "label": "Concept demo",
+   "callouts": [
+    "Each client sees only their data",
+    "Synced from your systems"
+   ],
+   "vo": "Each client sees only their own data, synced from the systems you already use."
+  },
+  {
+   "type": "chips",
+   "title": "Built to grow with you",
+   "items": [
+    [
+     "React.js",
+     "code"
+    ],
+    [
+     "Next.js",
+     "layout"
+    ],
+    [
+     "Node.js",
+     "server"
+    ],
+    [
+     "PHP",
+     "code"
+    ],
+    [
+     "REST APIs",
+     "link"
+    ],
+    [
+     "Role-based access",
+     "lock"
+    ]
+   ],
+   "vo": "We build portals with React, Next JS, Node and PHP, connected through APIs, with role based access."
+  },
+  {
+   "type": "endscreen",
+   "tagline": "Customer portals and dashboards for growing businesses",
+   "button": "Start your portal project on WhatsApp",
+   "tail": 1.2,
+   "vo": "Ready to give your customers their own portal? Start the conversation with SK Developer on WhatsApp."
+  }
+ ]
+}

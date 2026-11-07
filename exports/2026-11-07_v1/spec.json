@@ -1,0 +1,111 @@
+{
+ "id": "2026-11-07_v1",
+ "theme": "flame",
+ "music": {
+  "mood": "chill",
+  "seed": 5172
+ },
+ "voice": {
+  "speaker": 7,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "glass",
+  "captions": "outline",
+  "progress": "bottom",
+  "align": "left"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "kinetic",
+   "words": [
+    "Visitors,",
+    "but",
+    "no",
+    "inquiries?"
+   ],
+   "accent": [
+    3
+   ],
+   "size": 124,
+   "step": 0.3,
+   "vo": "Getting visitors, but no inquiries?"
+  },
+  {
+   "type": "list",
+   "title": "Four common leaks",
+   "good": false,
+   "items": [
+    [
+     "Vague headline",
+     "Visitors can't tell what you offer",
+     "search"
+    ],
+    [
+     "Slow on mobile",
+     "People leave before it loads",
+     "speed"
+    ],
+    [
+     "Long form",
+     "Too many fields, too soon",
+     "layout"
+    ],
+    [
+     "Generic button",
+     "\"Submit\" says nothing",
+     "bolt"
+    ]
+   ],
+   "vo": "Most landing pages leak in four places. A vague headline. A slow mobile page. A long form. And a button that just says submit."
+  },
+  {
+   "type": "browser",
+   "title": "One page, one clear action",
+   "url": "yourbusiness.com/offer",
+   "label": "Concept demo",
+   "callouts": [
+    "Clear headline, one action",
+    "Short form, fast on mobile"
+   ],
+   "vo": "Fix it with a clear headline, one action, a short form, and a page that loads fast on a phone."
+  },
+  {
+   "type": "character",
+   "title": "Tested on real phones",
+   "pose": "typing",
+   "skin": 1,
+   "scale": 1.05,
+   "shirt": "#111111",
+   "typed": [
+    "hero: say the offer",
+    "form: name, phone, need"
+   ],
+   "icons": [
+    "phone",
+    "speed",
+    "layout"
+   ],
+   "vo": "We build fast, mobile first landing pages in WordPress, Shopify or custom code."
+  },
+  {
+   "type": "cta",
+   "kicker": "Visitors but no inquiries?",
+   "lines": [
+    "Let's turn visits",
+    "into conversations."
+   ],
+   "sub": "Landing pages for WordPress, Shopify and custom sites.",
+   "button": "Share your page on WhatsApp",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "Share your landing page with SK Developer on WhatsApp. Let's turn visits into conversations."
+  }
+ ]
+}

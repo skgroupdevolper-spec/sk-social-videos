@@ -611,12 +611,12 @@
    "cta": "Still between the two? Pick the platform that fits your store. / Ask which one fits (WhatsApp)",
    "duration_s": 27.4,
    "scheduled_for": "2026-11-06T06:00:00-08:00",
-   "status": "scheduled",
+   "status": "not published — all 4 Metricool posts failed (account limit)",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "youtube": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "facebook": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "instagram": "ERROR (Metricool: You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -640,7 +640,8 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8562592704213502334"
     }
    },
-   "status_checked": "2026-11-06T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool). WARNING: 2026-11-05 posts failed at publish time with 'account limit reached'; these may fail the same way."
+   "status_checked": "2026-11-06T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool). WARNING: 2026-11-05 posts failed at publish time with 'account limit reached'; these may fail the same way.",
+   "status_checked_2": "2026-11-07T02:45-08:00 getScheduledPosts: all 4 providers ERROR 'You have reached your Metricool account limit.'"
   },
   {
    "id": "2026-11-06_v2",
@@ -684,12 +685,12 @@
    "cta": "Talk build vs buy on WhatsApp (endscreen) / Custom web apps built around how you work",
    "duration_s": 31.0,
    "scheduled_for": "2026-11-06T12:00:00-08:00",
-   "status": "scheduled",
+   "status": "not published — all 4 Metricool posts failed (account limit)",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "youtube": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "facebook": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "instagram": "ERROR (Metricool: You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -713,7 +714,96 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-5826142047610844562"
     }
    },
-   "status_checked": "2026-11-06T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool). WARNING: 2026-11-05 posts failed at publish time with 'account limit reached'; these may fail the same way."
+   "status_checked": "2026-11-06T02:50-08:00 (createScheduledPost responses, autoPublish true, video uploaded to Metricool). WARNING: 2026-11-05 posts failed at publish time with 'account limit reached'; these may fail the same way.",
+   "status_checked_2": "2026-11-07T02:45-08:00 getScheduledPosts: all 4 providers ERROR 'You have reached your Metricool account limit.'"
+  },
+  {
+   "id": "2026-11-07_v1",
+   "date": "2026-11-07",
+   "type": "educational",
+   "pillar": "Performance & UX (business websites / landing pages)",
+   "topic": "Landing page not converting: four common leaks and the fix",
+   "hook": "Getting visitors, but no inquiries?",
+   "title": "Landing Page Not Converting? 4 Leaks to Fix First",
+   "primary_keyword": "landing page not converting",
+   "secondary_keywords": [
+    "why is my landing page not converting",
+    "website not getting inquiries",
+    "landing page optimization",
+    "mobile landing page design",
+    "landing page developer"
+   ],
+   "audience": "small business owners, service businesses and eCommerce brands with traffic but few leads",
+   "main_benefit": "turn visits into inquiries: clear headline, one action, short form, fast mobile page",
+   "theme": "flame",
+   "layout": {
+    "cards": "glass",
+    "captions": "outline",
+    "progress": "bottom",
+    "align": "left"
+   },
+   "design": "flame theme: kinetic hook + red-cross icon list + browser walkthrough (Concept demo) + illustrated developer typing + WhatsApp cta; male voice + outline subtitles",
+   "scenes": [
+    "kinetic",
+    "list",
+    "browser",
+    "character",
+    "cta"
+   ],
+   "music": {
+    "mood": "chill",
+    "seed": 5172
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 7, speed 1.05; burned-in subtitles",
+   "cta": "Visitors but no inquiries? Let's turn visits into conversations. / Share your page on WhatsApp",
+   "duration_s": 29.1,
+   "scheduled_for": "2026-11-07T06:00:00-08:00",
+   "status": "created",
+   "platform_status": {}
+  },
+  {
+   "id": "2026-11-07_v2",
+   "date": "2026-11-07",
+   "type": "capability",
+   "pillar": "Dashboards / customer portals",
+   "topic": "Customer portal: give each client a secure login for invoices, order status, documents, bookings and messages",
+   "hook": "Where's my invoice? Any update on my order?",
+   "title": "Customer Portal for Small Business: Let Clients Help Themselves",
+   "primary_keyword": "customer portal development",
+   "secondary_keywords": [
+    "client portal for small business",
+    "custom customer portal",
+    "self-service customer portal",
+    "client portal vs saas",
+    "customer dashboard development"
+   ],
+   "audience": "service businesses, B2B suppliers, agencies and clinics answering repeat client requests",
+   "main_benefit": "clients self-serve invoices, order status and files; each sees only their own data, synced from existing systems",
+   "theme": "paper",
+   "layout": {
+    "cards": "solid",
+    "captions": "bar",
+    "progress": "top",
+    "align": "center"
+   },
+   "design": "paper theme: kinetic quote hook + 3x2 icon grid + client dashboard (Concept demo) + icon chips + WhatsApp endscreen; female voice + bar subtitles",
+   "scenes": [
+    "kinetic",
+    "icons",
+    "dashboard",
+    "chips",
+    "endscreen"
+   ],
+   "music": {
+    "mood": "house",
+    "seed": 8843
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 18, speed 1.05; burned-in subtitles",
+   "cta": "Start your portal project on WhatsApp (endscreen) / Customer portals and dashboards for growing businesses",
+   "duration_s": 28.7,
+   "scheduled_for": "2026-11-07T12:00:00-08:00",
+   "status": "created",
+   "platform_status": {}
   }
  ],
  "notes": [
@@ -732,6 +822,10 @@
   {
    "date": "2026-11-06",
    "note": "2026-11-05 posts: 6 of 8 failed in Metricool with 'You have reached your Metricool account limit.' Themes: only studio was unused in the last 4 videos, so v2 reuses ink (last 11-04_v2 with chill; today corporate, a new pair). Moods: upbeat new vs last 4; corporate last used 11-04_v1."
+  },
+  {
+   "date": "2026-11-07",
+   "note": "2026-11-06: all 8 Metricool posts failed with 'account limit reached' (owner notified by push). Themes: only flame was unused in the last 4 videos (v1); v2 reuses paper (last 11-05_v1 with lofi; today house, a new pair). Moods: chill unused in last 4 (v1); v2 house last used 11-05_v2. 'enquiries' spelled out by TTS, so 'inquiries' is used."
   }
  ]
 }
