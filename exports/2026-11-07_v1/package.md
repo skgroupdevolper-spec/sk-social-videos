@@ -7,7 +7,7 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta. Kicker "Visitors but no inquiries?", headline "Let's turn visits into conversations.", button "Share your page on WhatsApp", +92 325 2314412, wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | content/profile-setup.md (all items still ⏳) |
-| Uploaded / scheduled | see table at the end | Metricool, 2026-11-07 06:00 America/Los_Angeles. **Risk: Metricool account limit made all 8 posts fail on 11-06** |
+| Uploaded / scheduled | ✅ all 4 scheduled (table at the end) | Metricool, 2026-11-07 06:00 America/Los_Angeles. **Risk: Metricool account limit made all 8 posts fail on 11-06** |
 | Published | ⏳ | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ## Concept
@@ -96,7 +96,7 @@ Primary: **landing page not converting**. Secondary: why is my landing page not 
 ## Metricool posts
 | Platform | Status | id | uuid | Planner |
 |---|---|---|---|---|
-| TikTok | (pending) | | | |
-| YouTube | (pending) | | | |
-| Facebook | (pending) | | | |
-| Instagram | (pending) | | | |
+| TikTok | scheduled (PENDING, autoPublish) | 419842828 | -4305703963922641364 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-4305703963922641364) |
+| YouTube | scheduled (PENDING, autoPublish) | 419842840 | -333777560870301758 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-333777560870301758) |
+| Facebook | scheduled (PENDING, autoPublish) | 419842850 | -617397362592428536 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-617397362592428536) |
+| Instagram | scheduled (PENDING, autoPublish) | 419842860 | 83267682706473196 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=83267682706473196) |

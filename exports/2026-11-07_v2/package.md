@@ -7,7 +7,7 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: endscreen. Tagline "Customer portals and dashboards for growing businesses", button "Start your portal project on WhatsApp", +92 325 2314412, wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | content/profile-setup.md (all items still ⏳) |
-| Uploaded / scheduled | see table at the end | Metricool, 2026-11-07 12:00 America/Los_Angeles. **Risk: Metricool account limit made all 8 posts fail on 11-06** |
+| Uploaded / scheduled | ✅ all 4 scheduled (table at the end) | Metricool, 2026-11-07 12:00 America/Los_Angeles. **Risk: Metricool account limit made all 8 posts fail on 11-06** |
 | Published | ⏳ | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ## Concept
@@ -94,7 +94,7 @@ Primary: **customer portal development**. Secondary: client portal for small bus
 ## Metricool posts
 | Platform | Status | id | uuid | Planner |
 |---|---|---|---|---|
-| TikTok | (pending) | | | |
-| YouTube | (pending) | | | |
-| Facebook | (pending) | | | |
-| Instagram | (pending) | | | |
+| TikTok | scheduled (PENDING, autoPublish) | 419842870 | -1033238111802277596 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-1033238111802277596) |
+| YouTube | scheduled (PENDING, autoPublish) | 419842882 | -2940394213514523734 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2940394213514523734) |
+| Facebook | scheduled (PENDING, autoPublish) | 419842897 | -8561301236678374709 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-8561301236678374709) |
+| Instagram | scheduled (PENDING, autoPublish) | 419842907 | -954867309882621777 | [open](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-954867309882621777) |
