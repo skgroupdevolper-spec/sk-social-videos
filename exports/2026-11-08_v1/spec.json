@@ -1,0 +1,28 @@
+{
+ "id": "2026-11-08_v1",
+ "theme": "studio",
+ "music": {"mood": "lofi", "seed": 6731},
+ "voice": {"speaker": 9, "speed": 1.05},
+ "layout": {"cards": "outline", "captions": "box", "progress": "top", "align": "left"},
+ "brand": {"name": "SK Developer", "role": "Full-Stack Software Development", "mark": "SK", "phone": "+92 325 2314412"},
+ "scenes": [
+  {"type": "hook", "label": "WordPress owners", "lines": ["When was your site", "last updated?"], "accent": [1],
+   "vo": "When was your WordPress site last updated?"},
+  {"type": "steps", "title": "A simple care routine", "items": [
+     ["Weekly", "Updates, backup check, test forms", "clock"],
+     ["Monthly", "Core update, malware scan, speed", "shield"],
+     ["Quarterly", "Prune plugins, new passwords", "gear"]],
+   "vo": "Keep it simple. Every week, run updates, check your backup and test your forms. Every month, update the core, scan for malware and check speed. Every quarter, remove unused plugins and change passwords."},
+  {"type": "code", "title": "Checked before anything changes", "file": "terminal", "type_time": 3.0,
+   "lines": ["wp core check-update", "wp plugin list --update=available", "wp db export backup.sql"],
+   "keywords": ["wp"], "caption": "Illustrative WP-CLI commands",
+   "vo": "We check what needs updating and take a fresh backup first, so nothing is lost."},
+  {"type": "character", "title": "Tested on staging first", "pose": "typing", "skin": 2, "scale": 1.05, "shirt": "#F26A1B",
+   "typed": ["staging: update OK", "contact form: OK"], "icons": ["wordpress", "lock", "speed"],
+   "vo": "Updates are tested on a staging copy first, then your live site stays fast and secure."},
+  {"type": "cta", "kicker": "Can't remember the last update?", "lines": ["Let's keep your", "WordPress site healthy."],
+   "sub": "Maintenance, speed and security for WordPress sites.",
+   "button": "Check-up on WhatsApp", "link": "wa.me/923252314412", "link_label": "WhatsApp",
+   "vo": "Can't remember the last update? Book a WordPress check-up with SK Developer on WhatsApp."}
+ ]
+}

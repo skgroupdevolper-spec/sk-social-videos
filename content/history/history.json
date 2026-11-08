@@ -758,12 +758,12 @@
    "cta": "Visitors but no inquiries? Let's turn visits into conversations. / Share your page on WhatsApp",
    "duration_s": 29.1,
    "scheduled_for": "2026-11-07T06:00:00-08:00",
-   "status": "scheduled",
+   "status": "not published — all 4 Metricool posts failed (account limit)",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "youtube": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "facebook": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "instagram": "ERROR (Metricool: You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -787,7 +787,7 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=83267682706473196"
     }
    },
-   "status_checked": "2026-11-07T02:50-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all 8 posts on 11-06 failed at publish time with 'account limit reached'; these will likely fail the same way."
+   "status_checked": "2026-11-08T02:45-08:00 (Metricool getScheduledPosts): all 4 posts ERROR \"You have reached your Metricool account limit.\""
   },
   {
    "id": "2026-11-07_v2",
@@ -830,12 +830,12 @@
    "cta": "Start your portal project on WhatsApp (endscreen) / Customer portals and dashboards for growing businesses",
    "duration_s": 28.7,
    "scheduled_for": "2026-11-07T12:00:00-08:00",
-   "status": "scheduled",
+   "status": "not published — all 4 Metricool posts failed (account limit)",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "youtube": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "facebook": "ERROR (Metricool: You have reached your Metricool account limit.)",
+    "instagram": "ERROR (Metricool: You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -859,7 +859,105 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-954867309882621777"
     }
    },
-   "status_checked": "2026-11-07T02:50-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all 8 posts on 11-06 failed at publish time with 'account limit reached'; these will likely fail the same way."
+   "status_checked": "2026-11-08T02:45-08:00 (Metricool getScheduledPosts): all 4 posts ERROR \"You have reached your Metricool account limit.\""
+  },
+  {
+   "id": "2026-11-08_v1",
+   "date": "2026-11-08",
+   "type": "authority",
+   "pillar": "WordPress",
+   "topic": "WordPress maintenance: a simple weekly / monthly / quarterly care routine (backups first, updates tested on staging)",
+   "hook": "When was your WordPress site last updated?",
+   "title": "WordPress Maintenance Checklist: Weekly, Monthly & Quarterly",
+   "primary_keyword": "wordpress maintenance checklist",
+   "secondary_keywords": [
+    "wordpress website maintenance",
+    "wordpress maintenance for small business",
+    "outdated wordpress plugins",
+    "wordpress backup and security",
+    "wordpress care plan"
+   ],
+   "audience": "small-business owners whose WordPress site was built once and left alone",
+   "main_benefit": "a repeatable care routine that keeps a WordPress site updated, backed up, secure and working, with updates tested on staging",
+   "theme": "studio",
+   "layout": {
+    "cards": "outline",
+    "captions": "box",
+    "progress": "top",
+    "align": "left"
+   },
+   "design": "studio theme: hook card + icon steps (weekly/monthly/quarterly) + WP-CLI terminal (illustrative) + illustrated developer typing + WhatsApp CTA; female voice + box subtitles",
+   "scenes": [
+    "hook",
+    "steps",
+    "code",
+    "character",
+    "cta"
+   ],
+   "music": {
+    "mood": "lofi",
+    "seed": 6731
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 9, speed 1.05; burned-in subtitles",
+   "cta": "Can't remember the last update? Let's keep your WordPress site healthy. / Check-up on WhatsApp",
+   "duration_s": 29.1,
+   "scheduled_for": "2026-11-08T06:00:00-08:00",
+   "status": "created",
+   "platform_status": {
+    "tiktok": "PENDING",
+    "youtube": "PENDING",
+    "facebook": "PENDING",
+    "instagram": "PENDING"
+   }
+  },
+  {
+   "id": "2026-11-08_v2",
+   "date": "2026-11-08",
+   "type": "capability",
+   "pillar": "Business management systems (inventory / ERP)",
+   "topic": "Custom inventory system: one live stock record across shop, warehouse and website, with alerts, purchase orders and Shopify/WooCommerce/accounting sync",
+   "hook": "Sheet says twelve. Shelf says three.",
+   "title": "Inventory Management System for Small Business: Stop Stock Mismatches",
+   "primary_keyword": "inventory management system for small business",
+   "secondary_keywords": [
+    "custom inventory management system",
+    "spreadsheet vs inventory software",
+    "real-time stock tracking",
+    "multi-location inventory",
+    "small business erp"
+   ],
+   "audience": "retailers, wholesalers and online sellers with stock in more than one place",
+   "main_benefit": "stock counts that stay accurate in real time across channels (no overselling, alerts before stockouts)",
+   "theme": "graphite",
+   "layout": {
+    "cards": "glass",
+    "captions": "bar",
+    "progress": "bottom",
+    "align": "center"
+   },
+   "design": "graphite theme: kinetic contrast hook + typed search with problem cards (Concept demo) + store dashboard (Concept demo) + 3x2 icon grid + WhatsApp endscreen; male voice + bar subtitles",
+   "scenes": [
+    "kinetic",
+    "search",
+    "dashboard",
+    "icons",
+    "endscreen"
+   ],
+   "music": {
+    "mood": "corporate",
+    "seed": 2196
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 8, speed 1.05; burned-in subtitles",
+   "cta": "Plan your stock system on WhatsApp (endscreen) / Inventory, ERP and business systems built around how you sell",
+   "duration_s": 28.1,
+   "scheduled_for": "2026-11-08T12:00:00-08:00",
+   "status": "created",
+   "platform_status": {
+    "tiktok": "PENDING",
+    "youtube": "PENDING",
+    "facebook": "PENDING",
+    "instagram": "PENDING"
+   }
   }
  ],
  "notes": [
@@ -882,6 +980,10 @@
   {
    "date": "2026-11-07",
    "note": "2026-11-06: all 8 Metricool posts failed with 'account limit reached' (owner notified by push). Themes: only flame was unused in the last 4 videos (v1); v2 reuses paper (last 11-05_v1 with lofi; today house, a new pair). Moods: chill unused in last 4 (v1); v2 house last used 11-05_v2. 'enquiries' spelled out by TTS, so 'inquiries' is used."
+  },
+  {
+   "date": "2026-11-08",
+   "note": "2026-11-07: all 8 Metricool posts failed with 'account limit reached' (third day running; last successful publish 2026-11-05 v1 TikTok + Facebook). Themes: only graphite was unused in the last 4 videos (v2); v1 reuses studio (last 11-06_v1 with upbeat; today lofi, a new pair). Moods: lofi unused in last 4 (v1); v2 corporate (last 11-06_v2); graphite+corporate is a new pair. tools/art.py: icon() now skips drawing while an icon is too small during scale-in (the 'link' icon crashed PIL at tiny sizes)."
   }
  ]
 }

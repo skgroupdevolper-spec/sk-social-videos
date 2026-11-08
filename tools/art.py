@@ -12,11 +12,15 @@ ICONS = ["cart", "chat", "calendar", "chart", "code", "lock", "rocket", "phone",
 
 def icon(d, name, cx, cy, s, col, a=1.0, w=None):
     """Line icon centred at (cx, cy), box size s."""
+    if s <= 2: return  # nothing visible yet (scale-in can dip to or below 0)
     c = _A(col, a); w = w or max(3, int(s * .085)); r = s / 2
     def L(*pts): d.line([(cx + x * r, cy + y * r) for x, y in pts], fill=c, width=w, joint="curve")
     def RR(x0, y0, x1, y1, rad=.15, fill=None):
-        d.rounded_rectangle([cx + x0 * r, cy + y0 * r, cx + x1 * r, cy + y1 * r], radius=rad * r, outline=c, width=w,
-                            fill=_A(fill, a) if fill else None)
+        try:
+            d.rounded_rectangle([cx + x0 * r, cy + y0 * r, cx + x1 * r, cy + y1 * r], radius=rad * r, outline=c, width=w,
+                                fill=_A(fill, a) if fill else None)
+        except ValueError:  # tiny icon mid scale-in: stroke wider than the shape (e.g. "link" pill)
+            pass
     def E(x0, y0, x1, y1, fill=False): d.ellipse([cx + x0 * r, cy + y0 * r, cx + x1 * r, cy + y1 * r], outline=c, width=w, fill=c if fill else None)
     def ARC(x0, y0, x1, y1, a0, a1): d.arc([cx + x0 * r, cy + y0 * r, cx + x1 * r, cy + y1 * r], a0, a1, fill=c, width=w)
     if name == "cart":

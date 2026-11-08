@@ -1,0 +1,23 @@
+{
+ "id": "2026-11-08_v2",
+ "theme": "graphite",
+ "music": {"mood": "corporate", "seed": 2196},
+ "voice": {"speaker": 8, "speed": 1.05},
+ "layout": {"cards": "glass", "captions": "bar", "progress": "bottom", "align": "center"},
+ "brand": {"name": "SK Developer", "role": "Full-Stack Software Development", "mark": "SK", "phone": "+92 325 2314412"},
+ "scenes": [
+  {"type": "kinetic", "words": ["Sheet", "says", "twelve.", "Shelf", "says", "three."], "accent": [5], "size": 124, "step": 0.3,
+   "vo": "Your sheet says twelve in stock. The shelf says three."},
+  {"type": "search", "title": "Sound familiar?", "query": "stock never matches", "label": "Concept demo",
+   "results": [["Oversold online", "The item was already gone", "cart"], ["Surprise stockouts", "No warning before it ran out", "clock"], ["Hours reconciling", "Counting and fixing every week", "chart"]],
+   "highlight": 0,
+   "vo": "So you oversell online, run out without warning, and lose hours every week fixing the numbers."},
+  {"type": "dashboard", "kind": "store", "title": "One live stock system", "menu": ["Stock", "Locations", "Orders", "Reports"], "label": "Concept demo",
+   "callouts": ["Every sale updates stock", "Store, warehouse, website"],
+   "vo": "A custom inventory system updates stock with every sale, return and delivery, across your store, warehouse and website."},
+  {"type": "icons", "title": "Built around your stock", "items": [["bolt", "Low-stock alerts"], ["card", "Purchase orders"], ["chart", "Live reports"], ["link", "Shopify & Woo sync"], ["server", "Accounting link"], ["lock", "Staff roles"]],
+   "vo": "Add low stock alerts, purchase orders and reports, connected to Shopify, WooCommerce and your accounting through APIs."},
+  {"type": "endscreen", "tagline": "Inventory, ERP and business systems built around how you sell", "button": "Plan your stock system on WhatsApp", "tail": 1.2,
+   "vo": "Want numbers you can trust? Plan your stock system with SK Developer on WhatsApp."}
+ ]
+}
