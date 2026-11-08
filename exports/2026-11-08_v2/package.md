@@ -7,16 +7,16 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: endscreen, button "Plan your stock system on WhatsApp", tagline "Inventory, ERP and business systems built around how you sell" · +92 325 2314412 · wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | see table below | Metricool, 2026-11-08 12:00 America/Los_Angeles |
+| Uploaded / scheduled | ✅ 4/4 scheduled (table below) | Metricool, 2026-11-08 12:00 America/Los_Angeles |
 | Published | ⏳ per platform | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ### Metricool posts
 | Platform | Status | Post id · planner |
 |---|---|---|
-| TikTok | pending | — |
-| YouTube Shorts | pending | — |
-| Facebook Reels | pending | — |
-| Instagram Reels | pending | — |
+| TikTok | scheduled (PENDING, autoPublish) — not published | 420636455 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-5380698302188273186) |
+| YouTube Shorts | scheduled (PENDING, autoPublish) — not published | 420636463 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=1322267266047624736) |
+| Facebook Reels | scheduled (PENDING, autoPublish) — not published | 420636471 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8596728132482909581) |
+| Instagram Reels | scheduled (PENDING, autoPublish) — not published | 420636478 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5567042462523477060) |
 
 ## Concept
 - **Pillar / audience / angle:** Business management systems (inventory / ERP; custom development) · retailers, wholesalers and online sellers with stock in more than one place · one live stock system updated by every sale, return and delivery, connected to Shopify/WooCommerce and accounting.
@@ -99,3 +99,5 @@ Primary: inventory management system for small business · Secondary: custom inv
 - **Keywords used:** inventory management system, stock tracking, Shopify inventory, WooCommerce inventory
 - **Pinned comment suggestion:** Selling in-store and online? 📦 Tap the WhatsApp button on our profile and tell us how you track stock today.
 - **CTA wording:** Tap the WhatsApp button on our profile to plan your stock system.
+
+> ⚠️ Metricool rejected every post on 2026-11-06 and 2026-11-07 at publish time with "You have reached your Metricool account limit." These posts will most likely fail the same way until the plan is upgraded or quota is freed.

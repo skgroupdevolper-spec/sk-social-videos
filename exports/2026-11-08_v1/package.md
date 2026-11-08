@@ -7,16 +7,16 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta, wording: "Can't remember the last update? Let's keep your WordPress site healthy." · button "Check-up on WhatsApp" · +92 325 2314412 · wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | see table below | Metricool, 2026-11-08 06:00 America/Los_Angeles |
+| Uploaded / scheduled | ✅ 4/4 scheduled (table below) | Metricool, 2026-11-08 06:00 America/Los_Angeles |
 | Published | ⏳ per platform | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ### Metricool posts
 | Platform | Status | Post id · planner |
 |---|---|---|
-| TikTok | pending | — |
-| YouTube Shorts | pending | — |
-| Facebook Reels | pending | — |
-| Instagram Reels | pending | — |
+| TikTok | scheduled (PENDING, autoPublish) — not published | 420636263 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=3520740210129587517) |
+| YouTube Shorts | scheduled (PENDING, autoPublish) — not published | 420636275 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5032531736805068332) |
+| Facebook Reels | scheduled (PENDING, autoPublish) — not published | 420636287 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-4785304507331752751) |
+| Instagram Reels | scheduled (PENDING, autoPublish) — not published | 420636290 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8830054974896685066) |
 
 ## Concept
 - **Pillar / audience / angle:** WordPress · small-business owners whose WordPress site was built once and then left alone · a simple care routine (weekly / monthly / quarterly), updates tested on staging, backups first.
@@ -99,3 +99,5 @@ Primary: WordPress maintenance checklist · Secondary: WordPress website mainten
 - **Keywords used:** WordPress maintenance checklist, WordPress security, website maintenance
 - **Pinned comment suggestion:** Save this for your next site check 📌 Want us to do it for you? Tap the WhatsApp button on our profile.
 - **CTA wording:** Tap the WhatsApp button on our profile to book a WordPress check-up.
+
+> ⚠️ Metricool rejected every post on 2026-11-06 and 2026-11-07 at publish time with "You have reached your Metricool account limit." These posts will most likely fail the same way until the plan is upgraded or quota is freed.

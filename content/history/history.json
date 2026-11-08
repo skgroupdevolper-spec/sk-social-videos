@@ -902,13 +902,36 @@
    "cta": "Can't remember the last update? Let's keep your WordPress site healthy. / Check-up on WhatsApp",
    "duration_s": 29.1,
    "scheduled_for": "2026-11-08T06:00:00-08:00",
-   "status": "created",
+   "status": "scheduled",
    "platform_status": {
     "tiktok": "PENDING",
     "youtube": "PENDING",
     "facebook": "PENDING",
     "instagram": "PENDING"
-   }
+   },
+   "metricool_posts": {
+    "tiktok": {
+     "id": 420636263,
+     "uuid": "3520740210129587517",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=3520740210129587517"
+    },
+    "youtube": {
+     "id": 420636275,
+     "uuid": "5032531736805068332",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5032531736805068332"
+    },
+    "facebook": {
+     "id": 420636287,
+     "uuid": "-4785304507331752751",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-4785304507331752751"
+    },
+    "instagram": {
+     "id": 420636290,
+     "uuid": "8830054974896685066",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8830054974896685066"
+    }
+   },
+   "status_checked": "2026-11-08T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all 8 posts on 11-06 and 11-07 failed at publish time with \"account limit reached\"; these will likely fail the same way."
   },
   {
    "id": "2026-11-08_v2",
@@ -951,13 +974,36 @@
    "cta": "Plan your stock system on WhatsApp (endscreen) / Inventory, ERP and business systems built around how you sell",
    "duration_s": 28.1,
    "scheduled_for": "2026-11-08T12:00:00-08:00",
-   "status": "created",
+   "status": "scheduled",
    "platform_status": {
     "tiktok": "PENDING",
     "youtube": "PENDING",
     "facebook": "PENDING",
     "instagram": "PENDING"
-   }
+   },
+   "metricool_posts": {
+    "tiktok": {
+     "id": 420636455,
+     "uuid": "-5380698302188273186",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-5380698302188273186"
+    },
+    "youtube": {
+     "id": 420636463,
+     "uuid": "1322267266047624736",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=1322267266047624736"
+    },
+    "facebook": {
+     "id": 420636471,
+     "uuid": "8596728132482909581",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8596728132482909581"
+    },
+    "instagram": {
+     "id": 420636478,
+     "uuid": "5567042462523477060",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5567042462523477060"
+    }
+   },
+   "status_checked": "2026-11-08T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all 8 posts on 11-06 and 11-07 failed at publish time with \"account limit reached\"; these will likely fail the same way."
   }
  ],
  "notes": [
