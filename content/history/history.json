@@ -902,12 +902,12 @@
    "cta": "Can't remember the last update? Let's keep your WordPress site healthy. / Check-up on WhatsApp",
    "duration_s": 29.1,
    "scheduled_for": "2026-11-08T06:00:00-08:00",
-   "status": "scheduled",
+   "status": "failed (Metricool account limit) — not published",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR: You have reached your Metricool account limit.",
+    "youtube": "ERROR: You have reached your Metricool account limit.",
+    "facebook": "ERROR: You have reached your Metricool account limit.",
+    "instagram": "ERROR: You have reached your Metricool account limit."
    },
    "metricool_posts": {
     "tiktok": {
@@ -931,7 +931,7 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8830054974896685066"
     }
    },
-   "status_checked": "2026-11-08T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all 8 posts on 11-06 and 11-07 failed at publish time with \"account limit reached\"; these will likely fail the same way."
+   "status_checked": "2026-11-09T02:46-08:00 getScheduledPosts: all 4 providers status ERROR \"You have reached your Metricool account limit.\" No public URLs."
   },
   {
    "id": "2026-11-08_v2",
@@ -974,12 +974,12 @@
    "cta": "Plan your stock system on WhatsApp (endscreen) / Inventory, ERP and business systems built around how you sell",
    "duration_s": 28.1,
    "scheduled_for": "2026-11-08T12:00:00-08:00",
-   "status": "scheduled",
+   "status": "failed (Metricool account limit) — not published",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR: You have reached your Metricool account limit.",
+    "youtube": "ERROR: You have reached your Metricool account limit.",
+    "facebook": "ERROR: You have reached your Metricool account limit.",
+    "instagram": "ERROR: You have reached your Metricool account limit."
    },
    "metricool_posts": {
     "tiktok": {
@@ -1003,7 +1003,93 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5567042462523477060"
     }
    },
-   "status_checked": "2026-11-08T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all 8 posts on 11-06 and 11-07 failed at publish time with \"account limit reached\"; these will likely fail the same way."
+   "status_checked": "2026-11-09T02:46-08:00 getScheduledPosts: all 4 providers status ERROR \"You have reached your Metricool account limit.\" No public URLs."
+  },
+  {
+   "date": "2026-11-09",
+   "id": "2026-11-09_v1",
+   "type": "educational",
+   "pillar": "Shopify (performance / speed)",
+   "topic": "Why is my Shopify store slow on mobile: four usual causes (oversized images, too many apps, leftover app code, render-blocking scripts) and the theme-level fix, then re-measure on mobile",
+   "hook": "Is your Shopify store slow on mobile?",
+   "title": "Why Is My Shopify Store Slow? 4 Causes and the Fix",
+   "primary_keyword": "why is my shopify store slow",
+   "secondary_keywords": [
+    "shopify speed optimization",
+    "speed up shopify store",
+    "shopify store slow on mobile",
+    "shopify apps slowing down store",
+    "shopify theme performance"
+   ],
+   "audience": "Shopify store owners and eCommerce brands whose store feels slow on phones",
+   "main_benefit": "a faster mobile store from fixing images, apps, leftover code and scripts inside the theme, verified by re-testing on a phone",
+   "theme": "ink",
+   "layout": {
+    "cards": "solid",
+    "captions": "outline",
+    "progress": "bottom",
+    "align": "left"
+   },
+   "design": "ink theme: bold question hook + icon list of 4 causes + typed Liquid code editor (illustrative) + icon chips + WhatsApp CTA card; male voice + outline subtitles",
+   "scenes": [
+    "hook",
+    "list",
+    "code",
+    "chips",
+    "cta"
+   ],
+   "music": {
+    "mood": "upbeat",
+    "seed": 7412
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 5, speed 1.05; burned-in subtitles",
+   "cta": "Shopify feeling sluggish? Let's give shoppers a faster first look. / Speed audit on WhatsApp",
+   "duration_s": 27.8,
+   "scheduled_for": "2026-11-09T06:00:00-08:00",
+   "status": "created"
+  },
+  {
+   "date": "2026-11-09",
+   "id": "2026-11-09_v2",
+   "type": "capability",
+   "pillar": "Mobile (Flutter) + custom web applications",
+   "topic": "Mobile app vs web app: start with a web app when search, any device and one-update releases matter; mobile app for app stores, push, offline and device features; Flutter one codebase sharing the web app's backend",
+   "hook": "App store app? Or a web app?",
+   "title": "Mobile App vs Web App: Which Should Your Business Build First?",
+   "primary_keyword": "mobile app vs web app for business",
+   "secondary_keywords": [
+    "do i need an app for my business",
+    "progressive web app vs native app",
+    "flutter app development",
+    "web app or mobile app first",
+    "cross-platform app development"
+   ],
+   "audience": "founders, startups and service businesses deciding what to build first",
+   "main_benefit": "choosing the right first platform (web app, mobile app or both on one shared backend) before spending on development",
+   "theme": "flame",
+   "layout": {
+    "cards": "outline",
+    "captions": "bar",
+    "progress": "top",
+    "align": "center"
+   },
+   "design": "flame theme: kinetic question hook + icon list (web app first when) + 2x2 icon grid (mobile app for) + illustrated developer typing Flutter build commands + WhatsApp endscreen; female voice + bar subtitles",
+   "scenes": [
+    "kinetic",
+    "list",
+    "icons",
+    "character",
+    "endscreen"
+   ],
+   "music": {
+    "mood": "house",
+    "seed": 3368
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 14, speed 1.05; burned-in subtitles",
+   "cta": "Pick your platform with us on WhatsApp (endscreen) / Web apps and Flutter apps on one shared backend",
+   "duration_s": 28.2,
+   "scheduled_for": "2026-11-09T12:00:00-08:00",
+   "status": "created"
   }
  ],
  "notes": [
@@ -1030,6 +1116,10 @@
   {
    "date": "2026-11-08",
    "note": "2026-11-07: all 8 Metricool posts failed with 'account limit reached' (third day running; last successful publish 2026-11-05 v1 TikTok + Facebook). Themes: only graphite was unused in the last 4 videos (v2); v1 reuses studio (last 11-06_v1 with upbeat; today lofi, a new pair). Moods: lofi unused in last 4 (v1); v2 corporate (last 11-06_v2); graphite+corporate is a new pair. tools/art.py: icon() now skips drawing while an icon is too small during scale-in (the 'link' icon crashed PIL at tiny sizes)."
+  },
+  {
+   "date": "2026-11-09",
+   "note": "2026-11-08: all 8 Metricool posts failed with 'account limit reached' (fourth day running; last successful publish 2026-11-05 v1 TikTok + Facebook). Themes: only ink was unused in the last 4 videos (v1); v2 reuses flame (last 11-07_v1 with chill; today house, a new pair). Moods: upbeat unused in last 4 (v1); v2 house (last 11-07_v2). First Flutter/mobile video. TTS spelled out 'resize' and 'PageSpeed', so VO says 'shrink images to the size the screen needs' and 'Google's speed test'."
   }
  ]
 }

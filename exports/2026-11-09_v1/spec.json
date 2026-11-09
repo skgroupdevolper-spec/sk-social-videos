@@ -1,0 +1,125 @@
+{
+ "id": "2026-11-09_v1",
+ "theme": "ink",
+ "music": {
+  "mood": "upbeat",
+  "seed": 7412
+ },
+ "voice": {
+  "speaker": 5,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "solid",
+  "captions": "outline",
+  "progress": "bottom",
+  "align": "left"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "label": "Shopify store owners",
+   "lines": [
+    "Store slow",
+    "on mobile?"
+   ],
+   "accent": [
+    1
+   ],
+   "vo": "Is your Shopify store slow on mobile?"
+  },
+  {
+   "type": "list",
+   "title": "Four usual suspects",
+   "items": [
+    [
+     "Oversized images",
+     "Full-size photos on a small screen",
+     "layout"
+    ],
+    [
+     "Too many apps",
+     "Each one can add its own scripts",
+     "bag"
+    ],
+    [
+     "Leftover app code",
+     "Snippets stay after you uninstall",
+     "code"
+    ],
+    [
+     "Blocking scripts",
+     "The page waits before it shows",
+     "clock"
+    ]
+   ],
+   "vo": "It's usually four things. Images that are far too big, too many apps, code that old apps left behind, and scripts that make the page wait."
+  },
+  {
+   "type": "code",
+   "title": "Fixed inside the theme",
+   "file": "product-card.liquid",
+   "type_time": 3.0,
+   "lines": [
+    "{{ image | image_url: width: 800",
+    "  | image_tag: loading: 'lazy' }}",
+    "<script src=\"app.js\" defer></script>"
+   ],
+   "keywords": [
+    "image_tag:",
+    "image_url:",
+    "loading:",
+    "defer></script>",
+    "<script"
+   ],
+   "caption": "Illustrative Shopify Liquid",
+   "vo": "We shrink images to the size the screen needs, lazy load the ones below the fold, defer scripts, and clean out code nobody uses."
+  },
+  {
+   "type": "chips",
+   "title": "Then we measure again",
+   "items": [
+    [
+     "Mobile first",
+     "phone"
+    ],
+    [
+     "Images",
+     "layout"
+    ],
+    [
+     "Apps",
+     "gear"
+    ],
+    [
+     "Theme code",
+     "code"
+    ],
+    [
+     "Core Web Vitals",
+     "speed"
+    ]
+   ],
+   "vo": "Then we test again on a real phone and in Google's speed test, so you can see what changed."
+  },
+  {
+   "type": "cta",
+   "kicker": "Shopify feeling sluggish?",
+   "lines": [
+    "Let's give shoppers",
+    "a faster first look."
+   ],
+   "sub": "Shopify speed work, theme clean-ups and custom sections.",
+   "button": "Speed audit on WhatsApp",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "Shopify feeling sluggish? Request a speed audit from SK Developer on WhatsApp."
+  }
+ ]
+}

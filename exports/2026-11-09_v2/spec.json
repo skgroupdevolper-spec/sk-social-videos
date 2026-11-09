@@ -1,0 +1,113 @@
+{
+ "id": "2026-11-09_v2",
+ "theme": "flame",
+ "music": {
+  "mood": "house",
+  "seed": 3368
+ },
+ "voice": {
+  "speaker": 14,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "outline",
+  "captions": "bar",
+  "progress": "top",
+  "align": "center"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "kinetic",
+   "words": [
+    "App",
+    "store",
+    "app?",
+    "Or",
+    "a",
+    "web",
+    "app?"
+   ],
+   "accent": [
+    2,
+    6
+   ],
+   "size": 130,
+   "vo": "Do you need an app store app? Or a web app?"
+  },
+  {
+   "type": "list",
+   "title": "Start with a web app when",
+   "items": [
+    [
+     "People find you on Google",
+     "Search brings you customers",
+     "search"
+    ],
+    [
+     "Any device will do",
+     "Phone, tablet or laptop",
+     "globe"
+    ],
+    [
+     "You update often",
+     "One release, live for everyone",
+     "rocket"
+    ]
+   ],
+   "vo": "Start with a web app when customers find you through search, use any device, and you want one update that's live for everyone."
+  },
+  {
+   "type": "icons",
+   "title": "Go mobile app for",
+   "items": [
+    [
+     "phone",
+     "App store presence"
+    ],
+    [
+     "chat",
+     "Push notifications"
+    ],
+    [
+     "lock",
+     "Fuller offline use"
+    ],
+    [
+     "gear",
+     "Deeper device features"
+    ]
+   ],
+   "vo": "Choose a mobile app when you need the app stores, reliable push notifications, offline use, or deeper access to the phone."
+  },
+  {
+   "type": "character",
+   "title": "One Flutter codebase",
+   "pose": "typing",
+   "skin": 1,
+   "scale": 1.05,
+   "shirt": "#111111",
+   "typed": [
+    "flutter build apk",
+    "flutter build ios"
+   ],
+   "icons": [
+    "phone",
+    "server"
+   ],
+   "vo": "Need both? We build with Flutter. One codebase for Android and iOS, sharing the same backend as your web app."
+  },
+  {
+   "type": "endscreen",
+   "tagline": "Web apps and Flutter apps on one shared backend",
+   "button": "Pick your platform with us on WhatsApp",
+   "tail": 1.2,
+   "vo": "Not sure which to build first? Ask SK Developer on WhatsApp."
+  }
+ ]
+}
