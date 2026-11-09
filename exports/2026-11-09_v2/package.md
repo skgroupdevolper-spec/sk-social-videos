@@ -7,16 +7,16 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: endscreen — button "Pick your platform with us on WhatsApp", tagline "Web apps and Flutter apps on one shared backend" · +92 325 2314412 · wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | see table below | Metricool, 2026-11-09 12:00 America/Los_Angeles |
+| Uploaded / scheduled | ✅ 4/4 scheduled (table below; likely to fail: Metricool account limit) | Metricool, 2026-11-09 12:00 America/Los_Angeles |
 | Published | ⏳ per platform | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ### Metricool posts
 | Platform | Status | Post id · planner |
 |---|---|---|
-| TikTok | (filled after scheduling) | |
-| YouTube Shorts | (filled after scheduling) | |
-| Facebook Reels | (filled after scheduling) | |
-| Instagram Reels | (filled after scheduling) | |
+| TikTok | scheduled (PENDING, autoPublish) — not published | 421644865 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2103312811893440333) |
+| YouTube Shorts | scheduled (PENDING, autoPublish) — not published | 421644882 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5217132653244927955) |
+| Facebook Reels | scheduled (PENDING, autoPublish) — not published | 421644897 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-4467583654171163520) |
+| Instagram Reels | scheduled (PENDING, autoPublish) — not published | 421644911 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-9183985001795991365) |
 
 ## Concept
 - **Pillar / audience / angle:** Mobile (Flutter) + custom web applications · founders, startups and service businesses deciding what to build first · start with a web app when search, any-device access and one-update releases matter; choose a mobile app for app-store presence, reliable push notifications, fuller offline use and deeper device features; with Flutter one codebase covers Android and iOS on the same backend as the web app.
@@ -75,7 +75,7 @@ Primary: mobile app vs web app for business · Secondary: do I need an app for m
 - **Reel title:** App or Web App? Choose Before You Build
 - **Caption:**
   ```
-  "We need an app" is one of the first things we hear from new projects. Sometimes that's right. Often a web app is the smarter place to start.
+  "We need an app" is often the first idea for a new project. Sometimes that's right. Often a web app is the smarter place to start.
 
   A web app works on any device, can be found through search and updates for everyone at once. A mobile app earns its place when you need the app stores, reliable push notifications, offline use or deeper phone features. And if you need both, a Flutter app can share the same backend as your web app, so your data and logic live in one place.
 

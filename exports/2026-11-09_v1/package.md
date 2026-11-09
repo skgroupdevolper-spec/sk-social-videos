@@ -7,16 +7,16 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta — kicker "Shopify feeling sluggish?", headline "Let's give shoppers a faster first look.", button "Speed audit on WhatsApp" · +92 325 2314412 · wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | see table below | Metricool, 2026-11-09 06:00 America/Los_Angeles |
+| Uploaded / scheduled | ✅ 4/4 scheduled (table below; likely to fail: Metricool account limit) | Metricool, 2026-11-09 06:00 America/Los_Angeles |
 | Published | ⏳ per platform | ✅ only when Metricool shows PUBLISHED with a public URL |
 
 ### Metricool posts
 | Platform | Status | Post id · planner |
 |---|---|---|
-| TikTok | (filled after scheduling) | |
-| YouTube Shorts | (filled after scheduling) | |
-| Facebook Reels | (filled after scheduling) | |
-| Instagram Reels | (filled after scheduling) | |
+| TikTok | scheduled (PENDING, autoPublish) — not published | 421644471 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-7738482728421145156) |
+| YouTube Shorts | scheduled (PENDING, autoPublish) — not published | 421644488 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=7738446401996146731) |
+| Facebook Reels | scheduled (PENDING, autoPublish) — not published | 421644511 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-627744993946550130) |
+| Instagram Reels | scheduled (PENDING, autoPublish) — not published | 421644530 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2030014228420052178) |
 
 ## Concept
 - **Pillar / audience / angle:** Shopify (+ Performance & UX; core web development) · Shopify store owners and eCommerce brands whose store feels slow on phones · the four usual causes (oversized images, too many apps, leftover app code, render-blocking scripts) and what a theme-level fix looks like, then re-measuring on mobile.

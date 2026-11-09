@@ -1046,7 +1046,36 @@
    "cta": "Shopify feeling sluggish? Let's give shoppers a faster first look. / Speed audit on WhatsApp",
    "duration_s": 27.8,
    "scheduled_for": "2026-11-09T06:00:00-08:00",
-   "status": "created"
+   "status": "scheduled",
+   "platform_status": {
+    "tiktok": "PENDING",
+    "youtube": "PENDING",
+    "facebook": "PENDING",
+    "instagram": "PENDING"
+   },
+   "metricool_posts": {
+    "tiktok": {
+     "id": 421644471,
+     "uuid": "-7738482728421145156",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-7738482728421145156"
+    },
+    "youtube": {
+     "id": 421644488,
+     "uuid": "7738446401996146731",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=7738446401996146731"
+    },
+    "facebook": {
+     "id": 421644511,
+     "uuid": "-627744993946550130",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-627744993946550130"
+    },
+    "instagram": {
+     "id": 421644530,
+     "uuid": "2030014228420052178",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2030014228420052178"
+    }
+   },
+   "status_checked": "2026-11-09T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all posts on 11-06, 11-07 and 11-08 failed at publish time with \"account limit reached\"; these will likely fail the same way."
   },
   {
    "date": "2026-11-09",
@@ -1089,7 +1118,36 @@
    "cta": "Pick your platform with us on WhatsApp (endscreen) / Web apps and Flutter apps on one shared backend",
    "duration_s": 28.2,
    "scheduled_for": "2026-11-09T12:00:00-08:00",
-   "status": "created"
+   "status": "scheduled",
+   "platform_status": {
+    "tiktok": "PENDING",
+    "youtube": "PENDING",
+    "facebook": "PENDING",
+    "instagram": "PENDING"
+   },
+   "metricool_posts": {
+    "tiktok": {
+     "id": 421644865,
+     "uuid": "-2103312811893440333",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2103312811893440333"
+    },
+    "youtube": {
+     "id": 421644882,
+     "uuid": "5217132653244927955",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5217132653244927955"
+    },
+    "facebook": {
+     "id": 421644897,
+     "uuid": "-4467583654171163520",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-4467583654171163520"
+    },
+    "instagram": {
+     "id": 421644911,
+     "uuid": "-9183985001795991365",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-9183985001795991365"
+    }
+   },
+   "status_checked": "2026-11-09T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all posts on 11-06, 11-07 and 11-08 failed at publish time with \"account limit reached\"; these will likely fail the same way."
   }
  ],
  "notes": [
