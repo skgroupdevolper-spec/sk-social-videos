@@ -7,8 +7,16 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta — kicker "Want bookings while you serve?", headline "Reservations on / your own website.", button "Plan your reservations" · +92 325 2314412 · wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | ❌ not yet | — |
+| Uploaded / scheduled | ✅ 5/4 scheduled (table below; at risk: Metricool account limit) | Metricool, 2026-11-10 12:00 America/Los_Angeles |
 | Published | ⏳ per platform | ✅ only when Metricool shows PUBLISHED with a public URL |
+
+### Metricool posts
+| Platform | Status | Post id · planner |
+|---|---|---|
+| TikTok | scheduled (PENDING, autoPublish) — not published | 422984347 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8987037263542044108) |
+| YouTube Shorts | scheduled (PENDING, autoPublish) — not published | 422984358 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=246023023110799499) |
+| Facebook Reels | scheduled (PENDING, autoPublish) — not published | 422984372 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2916083371767318131) |
+| Instagram Reels | scheduled (PENDING, autoPublish) — not published | 422984394 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2545901182339756705) |
 
 ## Concept
 - **Pillar / audience / angle:** Booking & reservations · restaurants, cafés and hospitality venues · guests book on your own website (date, party size, free slot → instant confirmation → reminder); staff see the whole night with a wait list and guest notes; connected to the website, payments, email and reports through APIs.

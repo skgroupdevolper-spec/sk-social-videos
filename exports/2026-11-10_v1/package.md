@@ -7,8 +7,16 @@
 | Platform packages prepared | ✅ | this file, 4 sections below |
 | WhatsApp CTA / end screen in video | ✅ | scene: cta — kicker "Website feeling out of date?", headline "Let's redesign it / around your customers.", button "Book a redesign review" · +92 325 2314412 · wa.me/923252314412 |
 | Profile CTA configured | ⏳ owner action | see content/profile-setup.md; all items still ⏳ |
-| Uploaded / scheduled | ❌ not yet | — |
+| Uploaded / scheduled | ✅ 5/4 scheduled (table below; at risk: Metricool account limit) | Metricool, 2026-11-10 06:00 America/Los_Angeles |
 | Published | ⏳ per platform | ✅ only when Metricool shows PUBLISHED with a public URL |
+
+### Metricool posts
+| Platform | Status | Post id · planner |
+|---|---|---|
+| TikTok | scheduled (PENDING, autoPublish) — not published | 422983540 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2849092786259148208) |
+| YouTube Shorts | scheduled (PENDING, autoPublish) — not published | 422983905 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5897482184736262669) |
+| Facebook Reels | scheduled (PENDING, autoPublish) — not published | 422983927 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=6867657926225971490) |
+| Instagram Reels | scheduled (PENDING, autoPublish) — not published | 422983952 · [planner](https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2056046436011231761) |
 
 ## Concept
 - **Pillar / audience / angle:** Performance & UX / business website redesign (core web development) · small and mid-size business owners with an older website · three plain signs it's time; a refresh only changes the look, a rebuild fixes the structure (speed, mobile layout, features); either way pages are mapped and old links redirected so customers and search engines still find you.

@@ -1201,14 +1201,36 @@
    },
    "duration_s": 25.4,
    "scheduled_for": "2026-11-10T06:00:00-08:00",
-   "status": "created; packages prepared; not yet scheduled",
+   "status": "scheduled",
    "platform_status": {
-    "tiktok": "NOT SCHEDULED",
-    "youtube": "NOT SCHEDULED",
-    "facebook": "NOT SCHEDULED",
-    "instagram": "NOT SCHEDULED"
+    "tiktok": "PENDING",
+    "youtube": "PENDING",
+    "facebook": "PENDING",
+    "instagram": "PENDING"
    },
-   "metricool_posts": {}
+   "metricool_posts": {
+    "tiktok": {
+     "id": 422983540,
+     "uuid": "-2849092786259148208",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2849092786259148208"
+    },
+    "youtube": {
+     "id": 422983905,
+     "uuid": "5897482184736262669",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5897482184736262669"
+    },
+    "facebook": {
+     "id": 422983927,
+     "uuid": "6867657926225971490",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=6867657926225971490"
+    },
+    "instagram": {
+     "id": 422983952,
+     "uuid": "2056046436011231761",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2056046436011231761"
+    }
+   },
+   "status_checked": "2026-11-10T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all posts on 11-06 → 11-09 failed at publish time with \"account limit reached\"; these will likely fail the same way."
   },
   {
    "date": "2026-11-10",
@@ -1262,14 +1284,36 @@
    },
    "duration_s": 30.1,
    "scheduled_for": "2026-11-10T12:00:00-08:00",
-   "status": "created; packages prepared; not yet scheduled",
+   "status": "scheduled",
    "platform_status": {
-    "tiktok": "NOT SCHEDULED",
-    "youtube": "NOT SCHEDULED",
-    "facebook": "NOT SCHEDULED",
-    "instagram": "NOT SCHEDULED"
+    "tiktok": "PENDING",
+    "youtube": "PENDING",
+    "facebook": "PENDING",
+    "instagram": "PENDING"
    },
-   "metricool_posts": {}
+   "metricool_posts": {
+    "tiktok": {
+     "id": 422984347,
+     "uuid": "8987037263542044108",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8987037263542044108"
+    },
+    "youtube": {
+     "id": 422984358,
+     "uuid": "246023023110799499",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=246023023110799499"
+    },
+    "facebook": {
+     "id": 422984372,
+     "uuid": "2916083371767318131",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2916083371767318131"
+    },
+    "instagram": {
+     "id": 422984394,
+     "uuid": "-2545901182339756705",
+     "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-2545901182339756705"
+    }
+   },
+   "status_checked": "2026-11-10T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all posts on 11-06 → 11-09 failed at publish time with \"account limit reached\"; these will likely fail the same way."
   }
  ],
  "notes": [
