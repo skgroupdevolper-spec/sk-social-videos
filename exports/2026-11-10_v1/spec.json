@@ -1,0 +1,116 @@
+{
+ "id": "2026-11-10_v1",
+ "theme": "studio",
+ "music": {
+  "mood": "chill",
+  "seed": 5183
+ },
+ "voice": {
+  "speaker": 9,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "glass",
+  "captions": "box",
+  "progress": "top",
+  "align": "center"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "label": "Business websites",
+   "lines": [
+    "Does your website",
+    "need a redesign?"
+   ],
+   "accent": [
+    1
+   ],
+   "vo": "Does your website need a redesign?"
+  },
+  {
+   "type": "search",
+   "title": "Three signs it's time",
+   "query": "need a website redesign?",
+   "label": "Concept demo",
+   "results": [
+    [
+     "Looks dated",
+     "Not the business you are today",
+     "layout"
+    ],
+    [
+     "Awkward on a phone",
+     "Pinch, zoom, give up",
+     "phone"
+    ],
+    [
+     "Hard to update",
+     "You call someone for every change",
+     "gear"
+    ]
+   ],
+   "highlight": 1,
+   "vo": "If it looks dated, feels awkward on a phone, or you need help for every small change, it's time."
+  },
+  {
+   "type": "compare",
+   "title": "Refresh or rebuild?",
+   "left": {
+    "label": "Refresh only",
+    "items": [
+     "Just a new look",
+     "Same code underneath",
+     "Old limits stay"
+    ]
+   },
+   "right": {
+    "label": "Rebuild",
+    "items": [
+     "New structure and code",
+     "Speed fixed at the root",
+     "Room for new features"
+    ]
+   },
+   "vo": "A refresh only changes the look. A rebuild fixes what's underneath: speed, mobile layout, and features you've outgrown."
+  },
+  {
+   "type": "character",
+   "title": "Keep what already works",
+   "pose": "typing",
+   "skin": 1,
+   "scale": 1.0,
+   "shirt": "#111111",
+   "typed": [
+    "pages: mapped",
+    "old links: redirected",
+    "mobile: tested"
+   ],
+   "icons": [
+    "layout",
+    "search",
+    "phone"
+   ],
+   "vo": "Either way, we map your pages and redirect old links, so customers and search engines still find you."
+  },
+  {
+   "type": "cta",
+   "kicker": "Website feeling out of date?",
+   "lines": [
+    "Let's redesign it",
+    "around your customers."
+   ],
+   "sub": "WordPress, Shopify or custom-coded business websites.",
+   "button": "Book a redesign review",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "Website feeling out of date? Book a redesign review with SK Developer on WhatsApp."
+  }
+ ]
+}

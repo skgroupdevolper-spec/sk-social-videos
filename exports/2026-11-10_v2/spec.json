@@ -1,0 +1,117 @@
+{
+ "id": "2026-11-10_v2",
+ "theme": "paper",
+ "music": {
+  "mood": "corporate",
+  "seed": 8627
+ },
+ "voice": {
+  "speaker": 7,
+  "speed": 1.05
+ },
+ "layout": {
+  "cards": "solid",
+  "captions": "bar",
+  "progress": "bottom",
+  "align": "left"
+ },
+ "brand": {
+  "name": "SK Developer",
+  "role": "Full-Stack Software Development",
+  "mark": "SK",
+  "phone": "+92 325 2314412"
+ },
+ "scenes": [
+  {
+   "type": "kinetic",
+   "words": [
+    "Still",
+    "booking",
+    "tables",
+    "by",
+    "phone?"
+   ],
+   "accent": [
+    2
+   ],
+   "size": 128,
+   "step": 0.3,
+   "vo": "Still booking tables by phone, in the middle of service?"
+  },
+  {
+   "type": "steps",
+   "title": "How a guest books online",
+   "items": [
+    [
+     "Pick a time",
+     "Date, party size, free slots",
+     "calendar"
+    ],
+    [
+     "Confirm",
+     "Instant confirmation by email",
+     "mail"
+    ],
+    [
+     "Reminder",
+     "A nudge before they arrive",
+     "clock"
+    ]
+   ],
+   "vo": "With reservations on your own website, guests pick a date, party size and a free slot, get an instant confirmation, and a reminder before they arrive."
+  },
+  {
+   "type": "dashboard",
+   "kind": "booking",
+   "title": "Your team sees the whole night",
+   "menu": [
+    "Tonight",
+    "Tables",
+    "Waitlist",
+    "Guests"
+   ],
+   "label": "Concept demo",
+   "callouts": [
+    "Every booking in one view"
+   ],
+   "vo": "Your staff see every table for tonight, a wait list when you're full, and notes like allergies or birthdays."
+  },
+  {
+   "type": "icons",
+   "title": "Connected to what you run",
+   "sub": "Through APIs",
+   "items": [
+    [
+     "globe",
+     "Website"
+    ],
+    [
+     "card",
+     "Payments"
+    ],
+    [
+     "mail",
+     "Email"
+    ],
+    [
+     "chart",
+     "Reports"
+    ]
+   ],
+   "vo": "And it connects to your website, payments, email and reports."
+  },
+  {
+   "type": "cta",
+   "kicker": "Want bookings while you serve?",
+   "lines": [
+    "Reservations on",
+    "your own website."
+   ],
+   "sub": "Custom reservation platforms for restaurants, cafés and venues.",
+   "button": "Plan your reservations",
+   "link": "wa.me/923252314412",
+   "link_label": "WhatsApp",
+   "vo": "Want bookings to come in while you serve? Plan your reservation system with SK Developer on WhatsApp."
+  }
+ ]
+}

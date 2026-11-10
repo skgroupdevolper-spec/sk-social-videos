@@ -904,10 +904,10 @@
    "scheduled_for": "2026-11-08T06:00:00-08:00",
    "status": "failed (Metricool account limit) — not published",
    "platform_status": {
-    "tiktok": "ERROR: You have reached your Metricool account limit.",
-    "youtube": "ERROR: You have reached your Metricool account limit.",
-    "facebook": "ERROR: You have reached your Metricool account limit.",
-    "instagram": "ERROR: You have reached your Metricool account limit."
+    "tiktok": "ERROR (You have reached your Metricool account limit.)",
+    "youtube": "ERROR (You have reached your Metricool account limit.)",
+    "facebook": "ERROR (You have reached your Metricool account limit.)",
+    "instagram": "ERROR (You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -931,7 +931,7 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=8830054974896685066"
     }
    },
-   "status_checked": "2026-11-09T02:46-08:00 getScheduledPosts: all 4 providers status ERROR \"You have reached your Metricool account limit.\" No public URLs."
+   "status_checked": "2026-11-10T02:46-08:00 getScheduledPosts: all 4 providers ERROR 'You have reached your Metricool account limit.'; no public URLs"
   },
   {
    "id": "2026-11-08_v2",
@@ -976,10 +976,10 @@
    "scheduled_for": "2026-11-08T12:00:00-08:00",
    "status": "failed (Metricool account limit) — not published",
    "platform_status": {
-    "tiktok": "ERROR: You have reached your Metricool account limit.",
-    "youtube": "ERROR: You have reached your Metricool account limit.",
-    "facebook": "ERROR: You have reached your Metricool account limit.",
-    "instagram": "ERROR: You have reached your Metricool account limit."
+    "tiktok": "ERROR (You have reached your Metricool account limit.)",
+    "youtube": "ERROR (You have reached your Metricool account limit.)",
+    "facebook": "ERROR (You have reached your Metricool account limit.)",
+    "instagram": "ERROR (You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -1003,7 +1003,7 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=5567042462523477060"
     }
    },
-   "status_checked": "2026-11-09T02:46-08:00 getScheduledPosts: all 4 providers status ERROR \"You have reached your Metricool account limit.\" No public URLs."
+   "status_checked": "2026-11-10T02:46-08:00 getScheduledPosts: all 4 providers ERROR 'You have reached your Metricool account limit.'; no public URLs"
   },
   {
    "date": "2026-11-09",
@@ -1046,12 +1046,12 @@
    "cta": "Shopify feeling sluggish? Let's give shoppers a faster first look. / Speed audit on WhatsApp",
    "duration_s": 27.8,
    "scheduled_for": "2026-11-09T06:00:00-08:00",
-   "status": "scheduled",
+   "status": "failed (Metricool account limit) — not published",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR (You have reached your Metricool account limit.)",
+    "youtube": "ERROR (You have reached your Metricool account limit.)",
+    "facebook": "ERROR (You have reached your Metricool account limit.)",
+    "instagram": "ERROR (You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -1075,7 +1075,7 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=2030014228420052178"
     }
    },
-   "status_checked": "2026-11-09T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all posts on 11-06, 11-07 and 11-08 failed at publish time with \"account limit reached\"; these will likely fail the same way."
+   "status_checked": "2026-11-10T02:46-08:00 getScheduledPosts: all 4 providers ERROR 'You have reached your Metricool account limit.'; no public URLs"
   },
   {
    "date": "2026-11-09",
@@ -1118,12 +1118,12 @@
    "cta": "Pick your platform with us on WhatsApp (endscreen) / Web apps and Flutter apps on one shared backend",
    "duration_s": 28.2,
    "scheduled_for": "2026-11-09T12:00:00-08:00",
-   "status": "scheduled",
+   "status": "failed (Metricool account limit) — not published",
    "platform_status": {
-    "tiktok": "PENDING",
-    "youtube": "PENDING",
-    "facebook": "PENDING",
-    "instagram": "PENDING"
+    "tiktok": "ERROR (You have reached your Metricool account limit.)",
+    "youtube": "ERROR (You have reached your Metricool account limit.)",
+    "facebook": "ERROR (You have reached your Metricool account limit.)",
+    "instagram": "ERROR (You have reached your Metricool account limit.)"
    },
    "metricool_posts": {
     "tiktok": {
@@ -1147,7 +1147,129 @@
      "planner": "https://app.metricool.com/planner/calendar?blogId=7815878&openWithPostUuid=-9183985001795991365"
     }
    },
-   "status_checked": "2026-11-09T02:51-08:00 createScheduledPost responses (PENDING, autoPublish true, video uploaded to Metricool). WARNING: all posts on 11-06, 11-07 and 11-08 failed at publish time with \"account limit reached\"; these will likely fail the same way."
+   "status_checked": "2026-11-10T02:46-08:00 getScheduledPosts: all 4 providers ERROR 'You have reached your Metricool account limit.'; no public URLs"
+  },
+  {
+   "date": "2026-11-10",
+   "id": "2026-11-10_v1",
+   "type": "educational",
+   "pillar": "Performance & UX / website redesign (core web development)",
+   "topic": "Does your website need a redesign: three signs (dated, awkward on phones, hard to update); refresh only changes the look vs rebuild fixes structure (speed, mobile, features); map pages + redirect old links either way",
+   "hook": "Does your website need a redesign?",
+   "title": "Does Your Website Need a Redesign? Refresh vs Rebuild",
+   "platform_titles": {
+    "tiktok": "Does your website need a redesign? 3 signs",
+    "youtube": "Does Your Website Need a Redesign? Refresh vs Rebuild",
+    "facebook": "Refresh or Rebuild? Know What Your Website Needs"
+   },
+   "primary_keyword": "does my website need a redesign",
+   "secondary_keywords": [
+    "signs your website needs a redesign",
+    "website redesign vs rebuild",
+    "website refresh vs redesign",
+    "website redesign for small business",
+    "keep SEO during website redesign"
+   ],
+   "audience": "small and mid-size business owners with an older website",
+   "main_benefit": "knowing whether a refresh or a rebuild fixes your site, without losing existing links and search visibility",
+   "theme": "studio",
+   "layout": {
+    "cards": "glass",
+    "captions": "box",
+    "progress": "top",
+    "align": "center"
+   },
+   "design": "studio theme: hook question + typed search with 3 sign cards (Concept demo) + Refresh only vs Rebuild compare + illustrated developer typing a migration checklist + WhatsApp CTA; female voice + box subtitles",
+   "scenes": [
+    "hook",
+    "search",
+    "compare",
+    "character",
+    "cta"
+   ],
+   "music": {
+    "mood": "chill",
+    "seed": 5183
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 9, speed 1.05; burned-in subtitles",
+   "cta": "Website feeling out of date? Let's redesign it around your customers. / Book a redesign review",
+   "platform_ctas": {
+    "tt": "Want a second opinion? WhatsApp link on our profile.",
+    "yt": "Book a redesign review on WhatsApp.",
+    "fb": "Website feeling out of date? Book a redesign review with us on WhatsApp.",
+    "ig": "Tap the WhatsApp button on our profile to book a redesign review."
+   },
+   "duration_s": 25.4,
+   "scheduled_for": "2026-11-10T06:00:00-08:00",
+   "status": "created; packages prepared; not yet scheduled",
+   "platform_status": {
+    "tiktok": "NOT SCHEDULED",
+    "youtube": "NOT SCHEDULED",
+    "facebook": "NOT SCHEDULED",
+    "instagram": "NOT SCHEDULED"
+   },
+   "metricool_posts": {}
+  },
+  {
+   "date": "2026-11-10",
+   "id": "2026-11-10_v2",
+   "type": "capability",
+   "pillar": "Booking & reservations (restaurants & hospitality)",
+   "topic": "Restaurant table reservations on your own website: guest picks date/party size/slot, instant confirmation, reminder; staff view of the night with wait list and guest notes; connected to website, payments, email, reports via APIs",
+   "hook": "Still booking tables by phone?",
+   "title": "Restaurant Reservation System on Your Own Website",
+   "platform_titles": {
+    "tiktok": "Restaurant bookings on your own website",
+    "youtube": "Restaurant Reservation System on Your Own Website",
+    "facebook": "Let Guests Book a Table While You Serve"
+   },
+   "primary_keyword": "restaurant reservation system for website",
+   "secondary_keywords": [
+    "online table booking for restaurants",
+    "how to add online reservations to restaurant website",
+    "restaurant booking system with reminders",
+    "reduce restaurant no-shows",
+    "restaurant waitlist system"
+   ],
+   "audience": "restaurant, café and venue owners",
+   "main_benefit": "bookings that come in while staff keep serving, with one view of the night",
+   "theme": "paper",
+   "layout": {
+    "cards": "solid",
+    "captions": "bar",
+    "progress": "bottom",
+    "align": "left"
+   },
+   "design": "paper theme: kinetic question hook + 3 icon steps (guest booking flow) + booking dashboard (Concept demo) + 2x2 icon grid of connections + WhatsApp CTA; male voice + bar subtitles",
+   "scenes": [
+    "kinetic",
+    "steps",
+    "dashboard",
+    "icons",
+    "cta"
+   ],
+   "music": {
+    "mood": "corporate",
+    "seed": 8627
+   },
+   "voiceover": "Piper en_US-libritts_r-medium speaker 7, speed 1.05; burned-in subtitles",
+   "cta": "Want bookings while you serve? Reservations on your own website. / Plan your reservations",
+   "platform_ctas": {
+    "tt": "Want this for your place? WhatsApp link on our profile.",
+    "yt": "Plan your reservation system on WhatsApp.",
+    "fb": "Want bookings to come in while you serve? Plan your system with us on WhatsApp.",
+    "ig": "Tap the WhatsApp button on our profile to plan your reservation system."
+   },
+   "duration_s": 30.1,
+   "scheduled_for": "2026-11-10T12:00:00-08:00",
+   "status": "created; packages prepared; not yet scheduled",
+   "platform_status": {
+    "tiktok": "NOT SCHEDULED",
+    "youtube": "NOT SCHEDULED",
+    "facebook": "NOT SCHEDULED",
+    "instagram": "NOT SCHEDULED"
+   },
+   "metricool_posts": {}
   }
  ],
  "notes": [
@@ -1178,6 +1300,10 @@
   {
    "date": "2026-11-09",
    "note": "2026-11-08: all 8 Metricool posts failed with 'account limit reached' (fourth day running; last successful publish 2026-11-05 v1 TikTok + Facebook). Themes: only ink was unused in the last 4 videos (v1); v2 reuses flame (last 11-07_v1 with chill; today house, a new pair). Moods: upbeat unused in last 4 (v1); v2 house (last 11-07_v2). First Flutter/mobile video. TTS spelled out 'resize' and 'PageSpeed', so VO says 'shrink images to the size the screen needs' and 'Google's speed test'."
+  },
+  {
+   "date": "2026-11-10",
+   "note": "2026-11-08 and 11-09: all 16 Metricool posts ERROR 'account limit reached' (six publishing days with failures). Themes: paper was the only theme unused in the last 4 videos (v2); v1 reuses studio (last 11-08_v1 with lofi; today chill, a new pair). Moods: chill unused in last 4 (v1); v2 corporate (last 11-08_v2), paper+corporate is a new pair. Workflow automation topic dropped as too close to 11-05_v1."
   }
  ]
 }
